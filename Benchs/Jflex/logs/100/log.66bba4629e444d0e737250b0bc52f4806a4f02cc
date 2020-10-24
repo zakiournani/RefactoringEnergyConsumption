@@ -1,0 +1,242 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for jflex:jflex:jar:0.0.1-SNAPSHOT
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 57, column 11
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------------< [0;36mjflex:jflex[0;1m >-----------------------------[m
+[[1;34mINFO[m] [1mBuilding jflex 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mjflex[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/jffk0586/eclipse-workspace/Jflex/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mjflex[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jffk0586/eclipse-workspace/Jflex/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mjflex[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 4 source files to /home/jffk0586/eclipse-workspace/Jflex/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mjflex[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jffk0586/eclipse-workspace/Jflex/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mjflex[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/jffk0586/eclipse-workspace/Jflex/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mjflex[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/jffk0586/eclipse-workspace/Jflex/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running JsonBench.JsonBench.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mjflex[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/jffk0586/eclipse-workspace/Jflex/target/jflex-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-shade-plugin:3.2.0:shade[m [1m(default)[m @ [36mjflex[0;1m ---[m
+[[1;34mINFO[m] Including org.jetbrains.kotlin:kotlin-stdlib:jar:1.3.72 in the shaded jar.
+[[1;34mINFO[m] Including org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.3.72 in the shaded jar.
+[[1;34mINFO[m] Including org.jetbrains:annotations:jar:13.0 in the shaded jar.
+[[1;34mINFO[m] Including org.openjdk.jmh:jmh-core:jar:1.22 in the shaded jar.
+[[1;34mINFO[m] Including net.sf.jopt-simple:jopt-simple:jar:4.6 in the shaded jar.
+[[1;34mINFO[m] Including org.apache.commons:commons-math3:jar:3.2 in the shaded jar.
+[[1;34mINFO[m] Including org.openjdk.jmh:jmh-generator-annprocess:jar:1.22 in the shaded jar.
+[[1;34mINFO[m] Replacing /home/jffk0586/eclipse-workspace/Jflex/target/benchmarks.jar with /home/jffk0586/eclipse-workspace/Jflex/target/jflex-0.0.1-SNAPSHOT-shaded.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.0.0:exec[m [1m(run-benchmarks)[m @ [36mjflex[0;1m ---[m
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: commons.commons.App.baselineReader
+# Parameters: (factor = 100, input = 1)
+
+# Run progress: 0.00% complete, ETA 00:01:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 9419776+ 8424356+ 9270667+ 0.820 s/op
+Iteration   1: 8414590+ 8322000+ 8306803+ 8425881+ 8369974+ 8202738+ 8272562+ 0.769 s/op
+Iteration   2: 8257425+ 8363138+ 8293375+ 8302164+ 8213236+ 8200418+ 8254008+ 0.767 s/op
+Iteration   3: 8178995+ 8251871+ 8233438+ 8213358+ 8309000+ 8177286+ 8434426+ 0.766 s/op
+
+
+Result "commons.commons.App.baselineReader":
+  0.767 ±(99.9%) 0.031 s/op [Average]
+  (min, avg, max) = (0.766, 0.767, 0.769), stdev = 0.002
+  CI (99.9%): [0.736, 0.798] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: commons.commons.App.baselineReader
+# Parameters: (factor = 100, input = 2)
+
+# Run progress: 16.67% complete, ETA 00:01:35
+# Fork: 1 of 1
+# Warmup Iteration   1: 9795446+ 8064005+ 8813271+ 0.797 s/op
+Iteration   1: 7845133+ 7930034+ 7890727+ 7937907+ 7882548+ 7855204+ 7928142+ 0.726 s/op
+Iteration   2: 7950358+ 7935954+ 7902384+ 7905802+ 7833415+ 7898540+ 7932047+ 0.730 s/op
+Iteration   3: 7830974+ 7885538+ 7865642+ 7830058+ 7827433+ 7961650+ 7944926+ 0.727 s/op
+
+
+Result "commons.commons.App.baselineReader":
+  0.728 ±(99.9%) 0.032 s/op [Average]
+  (min, avg, max) = (0.726, 0.728, 0.730), stdev = 0.002
+  CI (99.9%): [0.696, 0.760] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: commons.commons.App.baselineReader
+# Parameters: (factor = 1000, input = 1)
+
+# Run progress: 33.33% complete, ETA 00:01:14
+# Fork: 1 of 1
+# Warmup Iteration   1: 85806604+ 7.927 s/op
+Iteration   1: 88687578+ 8.111 s/op
+Iteration   2: 82097018+ 7.558 s/op
+Iteration   3: 81831151+ 7.534 s/op
+
+
+Result "commons.commons.App.baselineReader":
+  7.734 ±(99.9%) 5.949 s/op [Average]
+  (min, avg, max) = (7.534, 7.734, 8.111), stdev = 0.326
+  CI (99.9%): [1.785, 13.684] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: commons.commons.App.baselineReader
+# Parameters: (factor = 1000, input = 2)
+
+# Run progress: 50.00% complete, ETA 00:01:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 86060021+ 7.859 s/op
+Iteration   1: 87781330+ 7.952 s/op
+Iteration   2: 81995274+ 7.474 s/op
+Iteration   3: 82317416+ 7.490 s/op
+
+
+Result "commons.commons.App.baselineReader":
+  7.639 ±(99.9%) 4.956 s/op [Average]
+  (min, avg, max) = (7.474, 7.639, 7.952), stdev = 0.272
+  CI (99.9%): [2.683, 12.594] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: commons.commons.App.baselineReader
+# Parameters: (factor = 10000, input = 1)
+
+# Run progress: 66.67% complete, ETA 00:00:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 875565141+ 81.319 s/op
+Iteration   1: 901336743+ 82.865 s/op
+Iteration   2: 845342074+ 78.048 s/op
+Iteration   3: 845030795+ 78.037 s/op
+
+
+Result "commons.commons.App.baselineReader":
+  79.650 ±(99.9%) 50.800 s/op [Average]
+  (min, avg, max) = (78.037, 79.650, 82.865), stdev = 2.785
+  CI (99.9%): [28.850, 130.450] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 3 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: commons.commons.App.baselineReader
+# Parameters: (factor = 10000, input = 2)
+
+# Run progress: 83.33% complete, ETA 00:01:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 855837469+ 78.351 s/op
+Iteration   1: 881044315+ 79.980 s/op
+Iteration   2: 825567223+ 75.147 s/op
+Iteration   3: 824634119+ 75.089 s/op
+
+
+Result "commons.commons.App.baselineReader":
+  76.739 ±(99.9%) 51.209 s/op [Average]
+  (min, avg, max) = (75.089, 76.739, 79.980), stdev = 2.807
+  CI (99.9%): [25.530, 127.948] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:12:08
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark           (factor)  (input)  Mode  Cnt   Score    Error  Units
+App.baselineReader       100        1  avgt    3   0.767 ±  0.031   s/op
+App.baselineReader       100        2  avgt    3   0.728 ±  0.032   s/op
+App.baselineReader      1000        1  avgt    3   7.734 ±  5.949   s/op
+App.baselineReader      1000        2  avgt    3   7.639 ±  4.956   s/op
+App.baselineReader     10000        1  avgt    3  79.650 ± 50.800   s/op
+App.baselineReader     10000        2  avgt    3  76.739 ± 51.209   s/op
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mjflex[0;1m ---[m
+[[1;34mINFO[m] Installing /home/jffk0586/eclipse-workspace/Jflex/target/jflex-0.0.1-SNAPSHOT.jar to /home/jffk0586/.m2/repository/jflex/jflex/0.0.1-SNAPSHOT/jflex-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/jffk0586/eclipse-workspace/Jflex/pom.xml to /home/jffk0586/.m2/repository/jflex/jflex/0.0.1-SNAPSHOT/jflex-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  12:12 min
+[[1;34mINFO[m] Finished at: 2020-09-04T04:41:02+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

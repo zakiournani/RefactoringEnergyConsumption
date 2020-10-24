@@ -1,0 +1,976 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for jackson:jackson:jar:0.0.1-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for xstream:xstream:jar should use a variable instead of a hard-coded path /home/jffk0586/eclipse-workspace/xstream/jars/xstream.jar @ line 34, column 22
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 47, column 11
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------------< [0;36mjackson:jackson[0;1m >---------------------------[m
+[[1;34mINFO[m] [1mBuilding jackson 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mjackson[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/jffk0586/eclipse-workspace/xstream/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mjackson[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jffk0586/eclipse-workspace/xstream/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mjackson[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 4 source files to /home/jffk0586/eclipse-workspace/xstream/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mjackson[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jffk0586/eclipse-workspace/xstream/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mjackson[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mjackson[0;1m ---[m
+[[1;34mINFO[m] No tests to run.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mjackson[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/jffk0586/eclipse-workspace/xstream/target/jackson-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-shade-plugin:3.2.0:shade[m [1m(default)[m @ [36mjackson[0;1m ---[m
+[[1;34mINFO[m] Including org.openjdk.jmh:jmh-core:jar:1.22 in the shaded jar.
+[[1;34mINFO[m] Including net.sf.jopt-simple:jopt-simple:jar:4.6 in the shaded jar.
+[[1;34mINFO[m] Including org.apache.commons:commons-math3:jar:3.2 in the shaded jar.
+[[1;34mINFO[m] Including org.openjdk.jmh:jmh-generator-annprocess:jar:1.22 in the shaded jar.
+[[1;34mINFO[m] Replacing /home/jffk0586/eclipse-workspace/xstream/target/benchmarks.jar with /home/jffk0586/eclipse-workspace/xstream/target/jackson-0.0.1-SNAPSHOT-shaded.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.0.0:exec[m [1m(run-benchmarks)[m @ [36mjackson[0;1m ---[m
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: jackson.jackson.App.benchmarkSerializationWithGSON
+
+# Run progress: 0.00% complete, ETA 00:06:30
+# Fork: 1 of 5
+# Warmup Iteration   1: 19699169+ 9522315+ 5722458+ 1.414 ops/s
+# Warmup Iteration   2: 3458915+ 4940783+ 2690179+ 2638360+ 2654962+ 2673699+ 2821465+ 3015923+ 3.779 ops/s
+# Warmup Iteration   3: 2504388+ 2588921+ 2553766+ 2890739+ 2582330+ 2513849+ 2482904+ 2875053+ 2948662+ 4.303 ops/s
+Iteration   1: 2742974+ 2538018+ 2488519+ 2519281+ 2528741+ 2546502+ 2627618+ 2557916+ 2553155+ 4.463 ops/s
+Iteration   2: 2549127+ 2495660+ 2594537+ 2933892+ 2903679+ 2704095+ 2522393+ 2489557+ 2504449+ 4.346 ops/s
+Iteration   3: 2497919+ 2559503+ 2474725+ 2478997+ 2600885+ 2492608+ 2545831+ 2548272+ 2496149+ 2774285+ 4.536 ops/s
+Iteration   4: 2507989+ 2515618+ 3669302+ 2997429+ 2751885+ 2469781+ 2475824+ 2550042+ 2507989+ 4.289 ops/s
+Iteration   5: 2493462+ 2507013+ 2445489+ 2506951+ 2488641+ 2557855+ 2491510+ 2466180+ 2636346+ 4.494 ops/s
+Iteration   6: 2473688+ 2494622+ 2495599+ 2523309+ 2494134+ 2487116+ 2773247+ 2529290+ 2659906+ 4.486 ops/s
+Iteration   7: 2486749+ 2506646+ 2485284+ 2575188+ 2495966+ 2484185+ 2485284+ 2480890+ 2485467+ 2501459+ 4.573 ops/s
+Iteration   8: 2500970+ 2512140+ 2465570+ 2475030+ 2521356+ 2583673+ 2493280+ 2467767+ 2570855+ 2516473+ 4.547 ops/s
+Iteration   9: 2512323+ 2585930+ 2500116+ 2478021+ 2539300+ 2489130+ 2549737+ 2489007+ 2690789+ 2451837+ 4.511 ops/s
+Iteration  10: 2487664+ 2510736+ 2514093+ 2493219+ 2516351+ 2506829+ 2477899+ 2502862+ 2499445+ 2571343+ 4.570 ops/s
+
+# Run progress: 6.67% complete, ETA 00:06:30
+# Fork: 2 of 5
+# Warmup Iteration   1: 19845713+ 11768769+ 4324635+ 1.316 ops/s
+# Warmup Iteration   2: 3042106+ 3858145+ 2581109+ 2630120+ 2734002+ 2594231+ 2832024+ 2980401+ 2926811+ 4.048 ops/s
+# Warmup Iteration   3: 2478997+ 2450250+ 2529168+ 2746819+ 2448907+ 2504633+ 2468804+ 2473322+ 2878410+ 2917839+ 4.439 ops/s
+Iteration   1: 2916130+ 2846734+ 2587212+ 2451653+ 2499017+ 2484796+ 2497613+ 2500299+ 2446405+ 4.434 ops/s
+Iteration   2: 2551995+ 2674310+ 2434320+ 2420343+ 2431695+ 2455255+ 2454157+ 2415154+ 2462763+ 2405633+ 4.649 ops/s
+Iteration   3: 2759026+ 3140007+ 2409235+ 2440423+ 2454340+ 2379266+ 2449518+ 2415521+ 2423212+ 4.473 ops/s
+Iteration   4: 3376151+ 2376153+ 2385370+ 2614862+ 2467339+ 2559625+ 2450067+ 2425531+ 2470514+ 2441277+ 4.558 ops/s
+Iteration   5: 2483637+ 2421076+ 2434137+ 2571527+ 2387079+ 2463372+ 2491510+ 2433954+ 2434381+ 2412408+ 4.644 ops/s
+Iteration   6: 2437983+ 2423394+ 2409784+ 2602166+ 2519952+ 2437860+ 2413263+ 2434136+ 2437738+ 2453913+ 4.664 ops/s
+Iteration   7: 2469782+ 2412042+ 2422907+ 2422174+ 2569207+ 2441583+ 2473932+ 2429498+ 2408807+ 2535516+ 4.670 ops/s
+Iteration   8: 2446527+ 2451898+ 2446038+ 2605645+ 2400263+ 2454645+ 2431207+ 2430292+ 2425898+ 2414179+ 4.683 ops/s
+Iteration   9: 2447381+ 2480402+ 2705742+ 2440241+ 2429193+ 2425104+ 2454645+ 2448419+ 2406915+ 2489068+ 4.653 ops/s
+Iteration  10: 2458368+ 2501092+ 2423700+ 2415216+ 2445855+ 2426752+ 2417596+ 2470880+ 2425653+ 2542474+ 4.674 ops/s
+
+# Run progress: 13.33% complete, ETA 00:06:05
+# Fork: 3 of 5
+# Warmup Iteration   1: 19024427+ 9992345+ 5448716+ 1.437 ops/s
+# Warmup Iteration   2: 5483629+ 4085683+ 2986198+ 3003716+ 2535760+ 2637505+ 2834771+ 2961052+ 3.691 ops/s
+# Warmup Iteration   3: 2815667+ 2510552+ 2581231+ 2696832+ 2764702+ 2482904+ 2481134+ 2474969+ 2578301+ 4.481 ops/s
+Iteration   1: 2774346+ 3015312+ 2924126+ 4012746+ 2357721+ 2.295 ops/s
+Iteration   2: 2377313+ 2396234+ 2461175+ 2545770+ 2469354+ 2461359+ 2635979+ 2616815+ 2459527+ 2449090+ 4.556 ops/s
+Iteration   3: 2494500+ 2455988+ 2427667+ 2440301+ 2440424+ 2460870+ 2651849+ 3823476+ 2.925 ops/s
+Iteration   4: 2457208+ 2426935+ 2499444+ 2411676+ 2458734+ 2457880+ 2516595+ 3315909+ 2490106+ 2660516+ 4.526 ops/s
+Iteration   5: 2431573+ 2471368+ 2496027+ 2650018+ 2517206+ 2482233+ 2529229+ 2464655+ 2501275+ 2457147+ 4.596 ops/s
+Iteration   6: 2582330+ 2477533+ 2684258+ 2468133+ 2434930+ 2497370+ 2445368+ 2438409+ 2454034+ 2441217+ 4.630 ops/s
+Iteration   7: 2750603+ 2594049+ 2430780+ 2478997+ 2459650+ 2455499+ 2502679+ 2426019+ 2440546+ 2456902+ 4.613 ops/s
+Iteration   8: 2458978+ 2480523+ 2488825+ 2451043+ 2437311+ 2451776+ 2462885+ 2519158+ 2486444+ 2414362+ 4.656 ops/s
+Iteration   9: 2492547+ 2481256+ 2458917+ 2448541+ 2453119+ 2460809+ 2482659+ 2473932+ 2490289+ 2464471+ 4.661 ops/s
+Iteration  10: 2528619+ 2461419+ 2460992+ 2458979+ 2512201+ 2439264+ 2469598+ 2489801+ 2455804+ 2526056+ 4.613 ops/s
+
+# Run progress: 20.00% complete, ETA 00:05:40
+# Fork: 4 of 5
+# Warmup Iteration   1: 19805430+ 10510166+ 4864856+ 1.375 ops/s
+# Warmup Iteration   2: 3994619+ 3611563+ 2510736+ 2607903+ 2839471+ 2575372+ 2907463+ 2998161+ 3.937 ops/s
+# Warmup Iteration   3: 2987114+ 2472223+ 2512628+ 2619561+ 2723443+ 2459283+ 2456781+ 2460931+ 2472040+ 4.491 ops/s
+Iteration   1: 2865776+ 2964104+ 2923210+ 2897027+ 2694512+ 2451715+ 2450555+ 2448785+ 2592095+ 4.218 ops/s
+Iteration   2: 2499505+ 2420282+ 2587823+ 2616510+ 2470819+ 2458124+ 2451349+ 2475030+ 2627130+ 2450494+ 4.582 ops/s
+Iteration   3: 2469110+ 2489861+ 2694024+ 3049492+ 2429864+ 2448847+ 2459100+ 2433648+ 2453240+ 4.440 ops/s
+Iteration   4: 2416436+ 2456537+ 3344412+ 2409722+ 2468256+ 2553704+ 2443292+ 2561151+ 2440484+ 2421442+ 4.610 ops/s
+Iteration   5: 2461114+ 2480157+ 2437311+ 2440240+ 2471063+ 2575800+ 2470208+ 2441766+ 2445794+ 2459223+ 4.649 ops/s
+Iteration   6: 2461724+ 2416314+ 2464777+ 2438287+ 2470086+ 2605463+ 2427239+ 2458734+ 2461664+ 2452081+ 4.645 ops/s
+Iteration   7: 2504693+ 2606561+ 2436517+ 2462579+ 2472040+ 2474175+ 2545526+ 2496881+ 2449701+ 2438287+ 4.630 ops/s
+Iteration   8: 2420954+ 2493219+ 2482476+ 2448175+ 2503351+ 2449639+ 2545648+ 2466669+ 2443414+ 2467584+ 4.641 ops/s
+Iteration   9: 2455804+ 2465814+ 2443659+ 2469659+ 2471307+ 2547723+ 2458307+ 2547784+ 2484247+ 2494561+ 4.632 ops/s
+Iteration  10: 2429559+ 2444696+ 2462091+ 2422663+ 2504143+ 2457636+ 2429803+ 2546564+ 2447015+ 2484552+ 4.657 ops/s
+
+# Run progress: 26.66% complete, ETA 00:05:10
+# Fork: 5 of 5
+# Warmup Iteration   1: 15947103+ 10849948+ 4291066+ 3941884+ 1.793 ops/s
+# Warmup Iteration   2: 4449696+ 2669060+ 2886223+ 2610955+ 2664544+ 3044914+ 3072869+ 2582573+ 3.883 ops/s
+# Warmup Iteration   3: 2581781+ 2529168+ 3092155+ 2616998+ 2527826+ 2509759+ 2549615+ 2860771+ 3168205+ 4.232 ops/s
+Iteration   1: 2510247+ 2510857+ 2513361+ 2557793+ 2548151+ 2732048+ 2496515+ 2640252+ 2502374+ 4.481 ops/s
+Iteration   2: 2531366+ 2612848+ 2708122+ 2669854+ 2946953+ 2751153+ 2575311+ 2497430+ 2528619+ 4.329 ops/s
+Iteration   3: 2580132+ 2529535+ 2521844+ 2505975+ 2649896+ 2519402+ 2538934+ 2521905+ 2507989+ 2532098+ 4.527 ops/s
+Iteration   4: 2511468+ 3574698+ 2537652+ 2901665+ 3129448+ 2520928+ 2671197+ 2539544+ 2508905+ 4.211 ops/s
+Iteration   5: 2500482+ 2522760+ 2528009+ 2528191+ 2531121+ 2565545+ 2657281+ 2533929+ 2534539+ 2522028+ 4.531 ops/s
+Iteration   6: 2521783+ 2497308+ 2530206+ 2575799+ 2605706+ 2632562+ 2610040+ 2546075+ 2557855+ 2559075+ 4.509 ops/s
+Iteration   7: 2563104+ 2760613+ 2549859+ 2508416+ 2602716+ 2551385+ 2657098+ 2507684+ 2537286+ 4.470 ops/s
+Iteration   8: 2536065+ 2586358+ 2553277+ 2597283+ 2533258+ 2532830+ 2535394+ 2514093+ 2607293+ 2563409+ 4.521 ops/s
+Iteration   9: 2528863+ 2510370+ 2504327+ 2489496+ 2568780+ 2513116+ 2498712+ 2515496+ 2650262+ 2530206+ 4.539 ops/s
+Iteration  10: 2539361+ 2529657+ 2526055+ 2550409+ 2521600+ 2494256+ 2529413+ 2531060+ 2490594+ 2562860+ 4.540 ops/s
+
+
+Result "jackson.jackson.App.benchmarkSerializationWithGSON":
+  4.467 ±(99.9%) 0.200 ops/s [Average]
+  (min, avg, max) = (2.295, 4.467, 4.683), stdev = 0.404
+  CI (99.9%): [4.267, 4.667] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jackson.jackson.App.benchmarkSerializationWithGSON
+
+# Run progress: 33.33% complete, ETA 00:04:42
+# Fork: 1 of 5
+# Warmup Iteration   1: 15456137+ 11034152+ 1.168 s/op
+# Warmup Iteration   2: 6837079+ 4082326+ 3795767+ 2877800+ 2774895+ 2795708+ 2515619+ 0.289 s/op
+# Warmup Iteration   3: 2834710+ 3115043+ 3000725+ 2537225+ 2604303+ 2706719+ 3715994+ 0.388 s/op
+Iteration   1: 2468500+ 2433099+ 2477716+ 2475457+ 2886223+ 2981194+ 2935417+ 2806145+ 2636956+ 0.246 s/op
+Iteration   2: 2503167+ 2511712+ 2587823+ 2624078+ 2576226+ 2499811+ 2614800+ 2873467+ 2534600+ 0.226 s/op
+Iteration   3: 2526178+ 2507440+ 3372366+ 2530634+ 2494683+ 2516412+ 2495965+ 2806817+ 3179191+ 0.231 s/op
+Iteration   4: 2476373+ 2523248+ 2542596+ 2504571+ 2517816+ 2508844+ 2504327+ 2496576+ 3429678+ 2528009+ 0.222 s/op
+Iteration   5: 2613702+ 2552789+ 2531487+ 2527765+ 2523553+ 2533502+ 2498834+ 2535822+ 2520257+ 2627434+ 0.222 s/op
+Iteration   6: 2641656+ 2555902+ 2508599+ 2486749+ 2531121+ 2540277+ 2509332+ 2541375+ 2563165+ 2488885+ 0.221 s/op
+Iteration   7: 2937737+ 2459100+ 2496576+ 2513483+ 2513482+ 2536920+ 2513360+ 2540155+ 2528070+ 0.223 s/op
+Iteration   8: 2507867+ 2621820+ 2514032+ 2531792+ 2528802+ 2543512+ 2482293+ 2516656+ 2600762+ 2507623+ 0.221 s/op
+Iteration   9: 2540277+ 2578057+ 2594537+ 2573785+ 2481195+ 2551690+ 2531427+ 2494073+ 2519769+ 2697319+ 0.223 s/op
+Iteration  10: 2501093+ 2554437+ 2563164+ 2714532+ 2497125+ 2540399+ 2534662+ 2530328+ 2610162+ 0.223 s/op
+
+# Run progress: 39.99% complete, ETA 00:04:15
+# Fork: 2 of 5
+# Warmup Iteration   1: 20053598+ 9358131+ 5024646+ 0.719 s/op
+# Warmup Iteration   2: 3905996+ 3545462+ 2609796+ 2580621+ 2800774+ 2613702+ 2879265+ 2949577+ 0.251 s/op
+# Warmup Iteration   3: 2915276+ 2506525+ 2561883+ 2627190+ 2732110+ 2499505+ 2451593+ 2456293+ 2457696+ 2870659+ 0.225 s/op
+Iteration   1: 2935539+ 2906609+ 2896721+ 2586969+ 2443109+ 2474787+ 2459649+ 2499445+ 2455377+ 0.230 s/op
+Iteration   2: 2487603+ 2615411+ 2882988+ 2454706+ 2444269+ 2453423+ 2518976+ 2441705+ 2441278+ 2480401+ 0.218 s/op
+Iteration   3: 2457025+ 2772027+ 2870903+ 2456964+ 2489740+ 2457208+ 2507684+ 2507806+ 2444512+ 0.225 s/op
+Iteration   4: 2469171+ 3574942+ 2457757+ 2523004+ 2568780+ 2459955+ 2616509+ 2476495+ 2439447+ 0.223 s/op
+Iteration   5: 2457636+ 2493218+ 2471430+ 2460137+ 2454157+ 2687249+ 2404291+ 2449823+ 2447991+ 2468317+ 0.216 s/op
+Iteration   6: 2454827+ 2437433+ 2435236+ 2454461+ 2443292+ 2551690+ 2517999+ 2473382+ 2442499+ 2456719+ 0.214 s/op
+Iteration   7: 2460626+ 2528497+ 2468194+ 2442437+ 2435541+ 2464776+ 2513604+ 2466425+ 2431634+ 2491022+ 0.214 s/op
+Iteration   8: 2466729+ 2490350+ 2442438+ 2462884+ 2487482+ 2579461+ 2615960+ 2477899+ 2494318+ 2479608+ 0.216 s/op
+Iteration   9: 2443781+ 2450738+ 2461542+ 2478509+ 2646050+ 2429681+ 2444025+ 2664361+ 2471856+ 2466852+ 0.216 s/op
+Iteration  10: 2452997+ 2422845+ 2456293+ 2536005+ 2420831+ 2445856+ 2438836+ 2420831+ 2428278+ 2468927+ 0.213 s/op
+
+# Run progress: 46.66% complete, ETA 00:03:46
+# Fork: 3 of 5
+# Warmup Iteration   1: 15684775+ 11699433+ 6000350+ 3317619+ 0.565 s/op
+# Warmup Iteration   2: 4932727+ 2635125+ 2637994+ 2887871+ 2637200+ 2962212+ 3088737+ 3831411+ 0.269 s/op
+# Warmup Iteration   3: 2560052+ 2533014+ 2684075+ 2780938+ 2921379+ 2475641+ 2501276+ 2512689+ 2914177+ 0.226 s/op
+Iteration   1: 2957817+ 3150382+ 2490594+ 2493341+ 2493280+ 2486810+ 2514825+ 2604058+ 2556024+ 0.230 s/op
+Iteration   2: 2848443+ 2899406+ 2459101+ 2473565+ 2499445+ 2463738+ 2501886+ 2482843+ 2491204+ 2501642+ 0.222 s/op
+Iteration   3: 2817864+ 2843621+ 2474603+ 2497918+ 2496393+ 2504571+ 2472406+ 2510003+ 2490900+ 0.224 s/op
+Iteration   4: 2485102+ 3591299+ 2622369+ 2479730+ 2457574+ 2504266+ 2481073+ 2498651+ 2474054+ 0.223 s/op
+Iteration   5: 2475946+ 2481927+ 2515008+ 2549066+ 2473992+ 2480646+ 2476983+ 2513055+ 2496942+ 0.223 s/op
+Iteration   6: 2481561+ 2444391+ 2466424+ 2471308+ 2452569+ 2465997+ 2539606+ 2657952+ 2465814+ 2458856+ 0.216 s/op
+Iteration   7: 2541497+ 2497736+ 2502557+ 2485772+ 2485284+ 2571771+ 2509149+ 2454278+ 2509027+ 2485772+ 0.217 s/op
+Iteration   8: 2487481+ 2509149+ 2546685+ 2547296+ 2466424+ 2637750+ 2473077+ 2490350+ 2476312+ 2520257+ 0.217 s/op
+Iteration   9: 2485407+ 2472284+ 2494622+ 2491754+ 2480523+ 2623590+ 2445794+ 2498529+ 2533014+ 2556085+ 0.218 s/op
+Iteration  10: 2478571+ 2470818+ 2493769+ 2529351+ 2504449+ 2508355+ 2565363+ 2485162+ 2464593+ 2472467+ 0.215 s/op
+
+# Run progress: 53.32% complete, ETA 00:03:17
+# Fork: 4 of 5
+# Warmup Iteration   1: 17844986+ 10767978+ 4489124+ 0.679 s/op
+# Warmup Iteration   2: 3688528+ 4935718+ 3077628+ 2762384+ 2768487+ 2724419+ 3020744+ 3135490+ 0.273 s/op
+# Warmup Iteration   3: 2644036+ 2689385+ 2707452+ 3091972+ 2719719+ 2633355+ 2642328+ 3022209+ 3100883+ 0.245 s/op
+Iteration   1: 2868035+ 2694024+ 2648980+ 2669793+ 2659661+ 2672113+ 2674065+ 2706597+ 2736077+ 0.233 s/op
+Iteration   2: 2707146+ 2609857+ 3758108+ 3093376+ 0.505 s/op
+Iteration   3: 2926567+ 2603509+ 2569268+ 2552301+ 2637810+ 2616388+ 2642693+ 2849114+ 2597527+ 0.240 s/op
+Iteration   4: 2651910+ 2595452+ 2619378+ 2633050+ 2640313+ 2650445+ 2858635+ 3076775+ 3810415+ 0.361 s/op
+Iteration   5: 3396170+ 2585931+ 2643609+ 2612603+ 2638299+ 2583429+ 2618218+ 2645501+ 2719964+ 0.237 s/op
+Iteration   6: 2641167+ 2658746+ 2632134+ 2634698+ 2624383+ 2609734+ 2662896+ 2634515+ 2645318+ 0.231 s/op
+Iteration   7: 3093620+ 2614068+ 2642510+ 2622064+ 2735527+ 2816766+ 2605889+ 2631280+ 2611626+ 0.237 s/op
+Iteration   8: 2637872+ 2660821+ 2600823+ 2645807+ 2600640+ 2667718+ 2653313+ 2659600+ 2588678+ 0.232 s/op
+Iteration   9: 2671135+ 2623102+ 2656731+ 2754937+ 2687737+ 2640130+ 2651361+ 2627312+ 2622430+ 0.232 s/op
+Iteration  10: 2618829+ 2844780+ 3369743+ 2809013+ 2770806+ 2661065+ 2627008+ 2600457+ 2601617+ 0.234 s/op
+
+# Run progress: 59.99% complete, ETA 00:02:49
+# Fork: 5 of 5
+# Warmup Iteration   1: 17878311+ 10108555+ 5804002+ 0.692 s/op
+# Warmup Iteration   2: 6766218+ 5237413+ 3051079+ 3092216+ 2491693+ 2621759+ 2805290+ 0.294 s/op
+# Warmup Iteration   3: 2880852+ 2888970+ 2495416+ 2557366+ 2731500+ 2711297+ 2451226+ 2387140+ 2450982+ 0.227 s/op
+Iteration   1: 2606805+ 2728020+ 2904595+ 2912712+ 3894827+ 2517999+ 2426263+ 2450067+ 2513849+ 0.243 s/op
+Iteration   2: 2434870+ 2456903+ 2428704+ 2569940+ 2674798+ 2435297+ 2422357+ 2419793+ 2445306+ 2423333+ 0.215 s/op
+Iteration   3: 2455988+ 2399102+ 2589471+ 2812676+ 2656549+ 2450312+ 2479607+ 2473566+ 2453607+ 2429620+ 0.220 s/op
+Iteration   4: 2478265+ 2463189+ 3343925+ 2430596+ 2514337+ 2435968+ 2429193+ 2436822+ 2457208+ 2423028+ 0.215 s/op
+Iteration   5: 2445611+ 2428399+ 3131766+ 2680352+ 2560663+ 2489679+ 2464288+ 2423029+ 2439935+ 0.224 s/op
+Iteration   6: 2422479+ 2461786+ 2431939+ 2462396+ 2471124+ 2625299+ 2452813+ 2671868+ 2445489+ 2433649+ 0.219 s/op
+Iteration   7: 2485650+ 2427240+ 2454034+ 2436273+ 2517084+ 2421685+ 2475214+ 2422174+ 2440789+ 2416681+ 0.214 s/op
+Iteration   8: 2443903+ 2430718+ 2533930+ 2451409+ 2425104+ 2450189+ 2547113+ 2443658+ 2454950+ 2417413+ 0.214 s/op
+Iteration   9: 2447931+ 2416009+ 2437006+ 2427667+ 2481744+ 2437616+ 2568047+ 2417230+ 2462396+ 2424555+ 0.214 s/op
+Iteration  10: 2475518+ 2470392+ 2466607+ 2463556+ 2472955+ 2473444+ 2628289+ 2395135+ 2541437+ 2448113+ 0.216 s/op
+
+
+Result "jackson.jackson.App.benchmarkSerializationWithGSON":
+  0.232 ±(99.9%) 0.022 s/op [Average]
+  (min, avg, max) = (0.213, 0.232, 0.505), stdev = 0.045
+  CI (99.9%): [0.210, 0.254] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: jackson.jackson.App.benchmarkSerializationWithGSON
+
+# Run progress: 66.66% complete, ETA 00:02:21
+# Fork: 1 of 5
+# Warmup Iteration   1: 20229563+ 12254912+ 1.018 s/op
+# Warmup Iteration   2: 3979848+ 3013908+ 4197377+ 2736382+ 2711541+ 2669976+ 2655877+ 2973504+ 0.260 ±(99.9%) 0.081 s/op
+# Warmup Iteration   3: 3144096+ 2561761+ 2631585+ 2569085+ 2880059+ 2621880+ 2549920+ 2574090+ 2887932+ 0.234 ±(99.9%) 0.032 s/op
+Iteration   1: 2980827+ 2813957+ 2552606+ 2535699+ 2515069+ 2498590+ 2551385+ 2651239+ 2594658+ 0.230 ±(99.9%) 0.028 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.223 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.266 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.266 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.266 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.266 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.266 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.266 s/op
+
+Iteration   2: 2693474+ 2604486+ 2799797+ 2523309+ 2696832+ 2931083+ 2990715+ 2538140+ 2546075+ 0.234 ±(99.9%) 0.028 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.226 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.262 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.262 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.262 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.262 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.262 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.262 s/op
+
+Iteration   3: 2532037+ 2548272+ 2586724+ 2530511+ 2542047+ 2689080+ 2535272+ 2558709+ 2546990+ 0.222 ±(99.9%) 0.008 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.221 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.234 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.234 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.234 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.234 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.234 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.234 s/op
+
+Iteration   4: 2543268+ 2566949+ 2512323+ 2509881+ 3530814+ 2956352+ 3107109+ 2504876+ 2520868+ 0.237 ±(99.9%) 0.046 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.222 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.295 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.295 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.295 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.295 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.295 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.295 s/op
+
+Iteration   5: 2759575+ 2539666+ 2517694+ 2516778+ 2503656+ 2558709+ 2549249+ 2532037+ 2606377+ 2565484+ 0.222 ±(99.9%) 0.007 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.221 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.234 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.235 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.235 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.235 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.235 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.235 s/op
+
+Iteration   6: 2648553+ 2554315+ 2554498+ 2520013+ 2553948+ 2555292+ 2529107+ 2637445+ 2581902+ 0.222 ±(99.9%) 0.004 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.222 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.228 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.228 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.228 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.228 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.228 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.228 s/op
+
+Iteration   7: 2563897+ 2499505+ 2516473+ 2571161+ 2567010+ 2574456+ 2524835+ 2611505+ 2530328+ 2682000+ 0.221 ±(99.9%) 0.006 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.221 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.230 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.231 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.231 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.231 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.231 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.231 s/op
+
+Iteration   8: 2492120+ 2558831+ 2528986+ 2562676+ 2507989+ 2562799+ 2565728+ 2514826+ 2551995+ 2525201+ 0.221 ±(99.9%) 0.003 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.220 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.225 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.226 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.226 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.226 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.226 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.226 s/op
+
+Iteration   9: 2636773+ 2562249+ 2494928+ 2542169+ 2540398+ 2529718+ 2502374+ 2535577+ 2506219+ 2520868+ 0.220 ±(99.9%) 0.004 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.225 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.226 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.226 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.226 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.226 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.226 s/op
+
+Iteration  10: 2605523+ 2520501+ 2512506+ 2524835+ 2516290+ 2563531+ 2554070+ 2479974+ 2513360+ 2555291+ 0.221 ±(99.9%) 0.006 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.220 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.230 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.231 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.231 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.231 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.231 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.231 s/op
+
+
+# Run progress: 73.32% complete, ETA 00:01:52
+# Fork: 2 of 5
+# Warmup Iteration   1: 19085461+ 8636575+ 5247179+ 0.673 ±(99.9%) 8.530 s/op
+# Warmup Iteration   2: 3196220+ 4381397+ 2905511+ 2679925+ 2940422+ 2640985+ 3046745+ 3073784+ 0.261 ±(99.9%) 0.070 s/op
+# Warmup Iteration   3: 3085014+ 2575311+ 2523980+ 2710321+ 2836235+ 2510187+ 2522576+ 2548090+ 2486566+ 0.228 ±(99.9%) 0.028 s/op
+Iteration   1: 2935600+ 2965569+ 2930229+ 2954521+ 2753472+ 2525323+ 2514764+ 2597955+ 2604852+ 0.245 ±(99.9%) 0.044 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.237 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.294 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.294 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.294 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.294 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.294 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.294 s/op
+
+Iteration   2: 2659356+ 2759331+ 2515313+ 2717461+ 2500787+ 2512322+ 2514398+ 2551446+ 2542474+ 0.224 ±(99.9%) 0.012 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.220 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.242 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.242 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.242 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.242 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.242 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.242 s/op
+
+Iteration   3: 2664483+ 2536676+ 2547601+ 2721001+ 2936394+ 2727166+ 2520257+ 2519769+ 2523736+ 0.229 ±(99.9%) 0.025 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.221 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.262 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.262 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.262 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.262 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.262 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.262 s/op
+
+Iteration   4: 2536614+ 2499750+ 2488213+ 3419975+ 2509332+ 2533929+ 2596917+ 2572015+ 2507928+ 0.224 ±(99.9%) 0.013 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.222 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.242 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.242 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.242 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.242 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.242 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.242 s/op
+
+Iteration   5: 2513421+ 2423151+ 2514764+ 2730339+ 2576837+ 2518854+ 2520562+ 2746087+ 2454888+ 0.223 ±(99.9%) 0.013 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.240 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.240 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.240 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.240 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.240 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.240 s/op
+
+Iteration   6: 2689019+ 2513909+ 2488946+ 2528863+ 3397940+ 0.415 ±(99.9%) 1.661 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.221 s/op
+                 benchmarkSerializationWithGSON·p0.90:   1.187 s/op
+                 benchmarkSerializationWithGSON·p0.95:   1.187 s/op
+                 benchmarkSerializationWithGSON·p0.99:   1.187 s/op
+                 benchmarkSerializationWithGSON·p0.999:  1.187 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 1.187 s/op
+                 benchmarkSerializationWithGSON·p1.00:   1.187 s/op
+
+Iteration   7: 2449212+ 2444269+ 2584038+ 2403741+ 2660211+ 2395562+ 2512628+ 2499628+ 2578606+ 0.226 ±(99.9%) 0.013 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.220 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.221 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.239 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.239 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.239 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.239 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.239 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.239 s/op
+
+Iteration   8: 2505120+ 2488519+ 2506219+ 2488886+ 2501337+ 2682244+ 2462701+ 2531244+ 3567251+ 0.342 ±(99.9%) 0.607 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.220 s/op
+                 benchmarkSerializationWithGSON·p0.90:   1.304 s/op
+                 benchmarkSerializationWithGSON·p0.95:   1.304 s/op
+                 benchmarkSerializationWithGSON·p0.99:   1.304 s/op
+                 benchmarkSerializationWithGSON·p0.999:  1.304 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 1.304 s/op
+                 benchmarkSerializationWithGSON·p1.00:   1.304 s/op
+
+Iteration   9: 2743706+ 3140739+ 2518121+ 2439447+ 2463800+ 2494684+ 2686028+ 2463556+ 2482842+ 0.224 ±(99.9%) 0.009 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.223 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.237 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.237 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.237 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.237 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.237 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.237 s/op
+
+Iteration  10: 2494135+ 2485284+ 2497552+ 2500970+ 2492425+ 2473200+ 2479608+ 3084404+ 2493768+ 0.224 ±(99.9%) 0.025 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.263 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.263 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.263 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.263 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.263 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.263 s/op
+
+
+# Run progress: 79.99% complete, ETA 00:01:24
+# Fork: 3 of 5
+# Warmup Iteration   1: 19754955+ 14358300+ 1.070 s/op
+# Warmup Iteration   2: 4910998+ 3189933+ 3674612+ 2572443+ 3082206+ 2550713+ 2571893+ 3028190+ 0.261 ±(99.9%) 0.069 s/op
+# Warmup Iteration   3: 4154896+ 2554376+ 2576470+ 2568475+ 3039421+ 2508905+ 2544427+ 2454278+ 2503961+ 0.239 ±(99.9%) 0.076 s/op
+Iteration   1: 2738884+ 2951225+ 2952324+ 2743035+ 2536554+ 2485162+ 2534051+ 2475397+ 2511041+ 0.232 ±(99.9%) 0.034 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.215 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.220 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.265 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.265 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.265 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.265 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.265 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.265 s/op
+
+Iteration   2: 2613580+ 2692253+ 2984428+ 2498834+ 2477960+ 2495233+ 2503839+ 2508295+ 2514458+ 0.225 ±(99.9%) 0.020 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.253 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.253 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.253 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.253 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.253 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.253 s/op
+
+Iteration   3: 2500970+ 2692254+ 2845940+ 2680413+ 2473077+ 2495050+ 2500848+ 2508172+ 2504450+ 0.224 ±(99.9%) 0.022 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.215 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.252 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.252 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.252 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.252 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.252 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.252 s/op
+
+Iteration   4: 2499017+ 2493646+ 2454949+ 2501642+ 3438468+ 2463433+ 2624689+ 2459101+ 2446404+ 2663751+ 0.221 ±(99.9%) 0.012 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.215 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.239 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.240 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.240 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.240 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.240 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.240 s/op
+
+Iteration   5: 2482416+ 2533806+ 2555231+ 2586114+ 2480340+ 2533746+ 2503716+ 2496149+ 2440423+ 2470453+ 0.220 ±(99.9%) 0.010 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.213 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.233 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.233 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.233 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.233 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.233 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.233 s/op
+
+Iteration   6: 2534967+ 2490106+ 2505303+ 2590020+ 2448419+ 2517572+ 2639702+ 2498895+ 2486017+ 0.225 ±(99.9%) 0.028 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.216 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.267 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.267 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.267 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.267 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.267 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.267 s/op
+
+Iteration   7: 2491021+ 2477106+ 2490533+ 2479608+ 2594659+ 2472650+ 2494317+ 2483514+ 2477594+ 2478570+ 0.218 ±(99.9%) 0.006 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.216 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.229 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.230 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.230 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.230 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.230 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.230 s/op
+
+Iteration   8: 2523187+ 2498956+ 2457086+ 2491387+ 2594659+ 2553888+ 2503595+ 2478753+ 2473139+ 2486443+ 0.218 ±(99.9%) 0.007 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.215 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.230 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.232 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.232 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.232 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.232 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.232 s/op
+
+Iteration   9: 2501276+ 2488214+ 2461847+ 2478632+ 2528375+ 2477288+ 2491510+ 2452081+ 2486078+ 2448541+ 0.217 ±(99.9%) 0.005 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.214 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.216 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.225 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.226 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.226 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.226 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.226 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.226 s/op
+
+Iteration  10: 2556329+ 2473382+ 2495233+ 2489618+ 2560113+ 2491876+ 2467401+ 2471490+ 2486200+ 2488702+ 0.218 ±(99.9%) 0.005 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.215 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.225 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.226 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.226 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.226 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.226 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.226 s/op
+
+
+# Run progress: 86.65% complete, ETA 00:00:56
+# Fork: 4 of 5
+# Warmup Iteration   1: 20471078+ 9127785+ 4282764+ 0.714 ±(99.9%) 8.901 s/op
+# Warmup Iteration   2: 3460197+ 4863940+ 2626763+ 2880303+ 2579889+ 2641838+ 3015617+ 2978569+ 0.264 ±(99.9%) 0.096 s/op
+# Warmup Iteration   3: 2501825+ 2526056+ 2570123+ 3016654+ 2561456+ 2528863+ 2463007+ 2571465+ 3000908+ 0.227 ±(99.9%) 0.027 s/op
+Iteration   1: 3036552+ 2516901+ 2476495+ 2547052+ 2473321+ 2488153+ 2768060+ 2460321+ 2570611+ 0.225 ±(99.9%) 0.031 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.214 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.268 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.268 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.268 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.268 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.268 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.268 s/op
+
+Iteration   2: 2515618+ 2510431+ 2581475+ 2477472+ 2760796+ 2960319+ 2666681+ 2525384+ 2484490+ 0.226 ±(99.9%) 0.030 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.213 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.216 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.264 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.264 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.264 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.264 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.264 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.264 s/op
+
+Iteration   3: 2745049+ 2509210+ 2488214+ 2512994+ 2487847+ 2691949+ 2432855+ 2523553+ 2529901+ 2493646+ 0.218 ±(99.9%) 0.009 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.211 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.231 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.232 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.232 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.232 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.232 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.232 s/op
+
+Iteration   4: 2505304+ 2460809+ 3393302+ 2500665+ 2841179+ 2891717+ 2479364+ 2571831+ 2480951+ 0.230 ±(99.9%) 0.043 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.214 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.216 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.288 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.288 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.288 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.288 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.288 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.288 s/op
+
+Iteration   5: 2495904+ 2429498+ 2538995+ 2465875+ 2509149+ 2506402+ 2659234+ 2502984+ 2480890+ 2462274+ 0.217 ±(99.9%) 0.009 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.212 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.215 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.232 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.234 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.234 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.234 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.234 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.234 s/op
+
+Iteration   6: 2599786+ 2460748+ 2459711+ 2457269+ 2474847+ 2467096+ 2800774+ 2436273+ 2460443+ 2500359+ 0.219 ±(99.9%) 0.013 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.214 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.215 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.240 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.242 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.242 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.242 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.242 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.242 s/op
+
+Iteration   7: 2531244+ 2511712+ 2476983+ 2499078+ 2458673+ 2490228+ 2673028+ 2438776+ 2496575+ 2475580+ 0.217 ±(99.9%) 0.007 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.213 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.216 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.229 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.230 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.230 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.230 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.230 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.230 s/op
+
+Iteration   8: 2627984+ 2502557+ 2487909+ 2471002+ 2451288+ 2539178+ 2458307+ 2494562+ 2498162+ 2473871+ 0.216 ±(99.9%) 0.004 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.214 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.216 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.223 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.223 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.223 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.223 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.223 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.223 s/op
+
+Iteration   9: 2480462+ 2510186+ 2499078+ 2427179+ 2512079+ 2579400+ 2442621+ 2518426+ 2483819+ 2511651+ 0.216 ±(99.9%) 0.004 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.212 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.216 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.222 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.223 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.223 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.223 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.223 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.223 s/op
+
+Iteration  10: 2505426+ 2498529+ 2511651+ 2521051+ 2507989+ 2464776+ 2469415+ 2547784+ 2477960+ 2459405+ 0.217 ±(99.9%) 0.005 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.214 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.224 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.225 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.225 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.225 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.225 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.225 s/op
+
+
+# Run progress: 93.32% complete, ETA 00:00:28
+# Fork: 5 of 5
+# Warmup Iteration   1: 15762960+ 12262725+ 5853378+ 0.695 ±(99.9%) 5.295 s/op
+# Warmup Iteration   2: 4434559+ 3472830+ 2566095+ 2639702+ 2895501+ 2610894+ 2954582+ 3014702+ 0.256 ±(99.9%) 0.059 s/op
+# Warmup Iteration   3: 3791433+ 2574029+ 2547845+ 2688714+ 2816521+ 2531427+ 2524957+ 2512566+ 2551080+ 0.233 ±(99.9%) 0.053 s/op
+Iteration   1: 2912163+ 2990227+ 3254874+ 2449945+ 2518670+ 2513726+ 2485345+ 2537408+ 2559136+ 0.236 ±(99.9%) 0.044 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.221 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.284 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.284 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.284 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.284 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.284 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.284 s/op
+
+Iteration   2: 2516961+ 3020134+ 2763787+ 2525262+ 2514032+ 2494195+ 2507318+ 2531732+ 2513543+ 0.225 ±(99.9%) 0.025 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.216 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.259 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.259 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.259 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.259 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.259 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.259 s/op
+
+Iteration   3: 2571588+ 2462579+ 2811577+ 2874443+ 2584405+ 2520868+ 2487176+ 2504449+ 2472345+ 0.226 ±(99.9%) 0.027 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.215 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.257 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.257 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.257 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.257 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.257 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.257 s/op
+
+Iteration   4: 2546868+ 2520197+ 2493279+ 3416679+ 2584038+ 2501520+ 2483270+ 2536310+ 2576592+ 2529351+ 0.221 ±(99.9%) 0.012 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.215 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.219 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.239 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.240 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.240 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.240 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.240 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.240 s/op
+
+Iteration   5: 2499689+ 2491205+ 2476251+ 2495294+ 2594293+ 2486505+ 2523370+ 2504205+ 2531915+ 2487726+ 0.221 ±(99.9%) 0.019 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.216 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.253 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.256 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.256 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.256 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.256 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.256 s/op
+
+Iteration   6: 2508844+ 2483575+ 2471979+ 2511407+ 2520135+ 2768792+ 2660088+ 2538202+ 2500298+ 2509759+ 0.219 ±(99.9%) 0.006 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.215 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.228 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.228 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.228 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.228 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.228 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.228 s/op
+
+Iteration   7: 2524713+ 2514581+ 2518976+ 2511102+ 2506890+ 2570245+ 2521783+ 2469415+ 2506708+ 2494195+ 0.218 ±(99.9%) 0.004 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.215 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.225 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.226 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.226 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.226 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.226 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.226 s/op
+
+Iteration   8: 2492243+ 2493646+ 2545830+ 2480219+ 2441705+ 2634515+ 2527703+ 2482294+ 2531854+ 2512872+ 0.220 ±(99.9%) 0.007 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.216 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.230 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.230 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.230 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.230 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.230 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.230 s/op
+
+Iteration   9: 2506524+ 2501337+ 2481622+ 2492791+ 2517022+ 2650018+ 3361564+ 0.367 ±(99.9%) 0.877 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.216 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.217 s/op
+                 benchmarkSerializationWithGSON·p0.90:   1.250 s/op
+                 benchmarkSerializationWithGSON·p0.95:   1.250 s/op
+                 benchmarkSerializationWithGSON·p0.99:   1.250 s/op
+                 benchmarkSerializationWithGSON·p0.999:  1.250 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 1.250 s/op
+                 benchmarkSerializationWithGSON·p1.00:   1.250 s/op
+
+Iteration  10: 2383661+ 2425592+ 2488275+ 2413018+ 2450556+ 2399163+ 2463373+ 2487054+ 2478937+ 2559136+ 0.222 ±(99.9%) 0.009 s/op
+                 benchmarkSerializationWithGSON·p0.00:   0.218 s/op
+                 benchmarkSerializationWithGSON·p0.50:   0.220 s/op
+                 benchmarkSerializationWithGSON·p0.90:   0.236 s/op
+                 benchmarkSerializationWithGSON·p0.95:   0.238 s/op
+                 benchmarkSerializationWithGSON·p0.99:   0.238 s/op
+                 benchmarkSerializationWithGSON·p0.999:  0.238 s/op
+                 benchmarkSerializationWithGSON·p0.9999: 0.238 s/op
+                 benchmarkSerializationWithGSON·p1.00:   0.238 s/op
+
+
+
+Result "jackson.jackson.App.benchmarkSerializationWithGSON":
+  N = 468
+  mean =      0.230 ±(99.9%) 0.013 s/op
+
+  Histogram, s/op:
+    [0.000, 0.125) = 0 
+    [0.125, 0.250) = 437 
+    [0.250, 0.375) = 28 
+    [0.375, 0.500) = 0 
+    [0.500, 0.625) = 0 
+    [0.625, 0.750) = 0 
+    [0.750, 0.875) = 0 
+    [0.875, 1.000) = 0 
+    [1.000, 1.125) = 0 
+    [1.125, 1.250) = 2 
+    [1.250, 1.375) = 1 
+    [1.375, 1.500) = 0 
+    [1.500, 1.625) = 0 
+    [1.625, 1.750) = 0 
+    [1.750, 1.875) = 0 
+
+  Percentiles, s/op:
+      p(0.0000) =      0.211 s/op
+     p(50.0000) =      0.219 s/op
+     p(90.0000) =      0.237 s/op
+     p(95.0000) =      0.259 s/op
+     p(99.0000) =      0.294 s/op
+     p(99.9000) =      1.304 s/op
+     p(99.9900) =      1.304 s/op
+     p(99.9990) =      1.304 s/op
+     p(99.9999) =      1.304 s/op
+    p(100.0000) =      1.304 s/op
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: jackson.jackson.App.benchmarkSerializationWithGSON
+
+# Run progress: 99.98% complete, ETA 00:00:00
+# Fork: 1 of 5
+# Warmup Iteration   1: 18217544+ 1.116 s/op
+# Warmup Iteration   2: 16419697+ 1.343 s/op
+# Warmup Iteration   3: 5641465+ 0.369 s/op
+Iteration   1: 3229179+ 0.257 s/op
+Iteration   2: 4053883+ 0.331 s/op
+Iteration   3: 2603265+ 0.230 s/op
+Iteration   4: 2653009+ 0.232 s/op
+Iteration   5: 2788873+ 0.238 s/op
+Iteration   6: 2592157+ 0.225 s/op
+Iteration   7: 2851799+ 0.248 s/op
+Iteration   8: 3031120+ 0.268 s/op
+Iteration   9: 2988640+ 0.259 s/op
+Iteration  10: 2512506+ 0.218 s/op
+
+# Run progress: 99.99% complete, ETA 00:00:00
+# Fork: 2 of 5
+# Warmup Iteration   1: 16440998+ 1.018 s/op
+# Warmup Iteration   2: 9217872+ 0.541 s/op
+# Warmup Iteration   3: 7816569+ 0.454 s/op
+Iteration   1: 4763721+ 0.326 s/op
+Iteration   2: 5364366+ 0.396 s/op
+Iteration   3: 2855278+ 0.241 s/op
+Iteration   4: 3260002+ 0.256 s/op
+Iteration   5: 2625604+ 0.234 s/op
+Iteration   6: 2706352+ 0.234 s/op
+Iteration   7: 3048393+ 0.268 s/op
+Iteration   8: 3077446+ 0.267 s/op
+Iteration   9: 2591363+ 0.222 s/op
+Iteration  10: 2621453+ 0.221 s/op
+
+# Run progress: 99.99% complete, ETA 00:00:00
+# Fork: 3 of 5
+# Warmup Iteration   1: 16141133+ 1.003 s/op
+# Warmup Iteration   2: 12752348+ 0.745 s/op
+# Warmup Iteration   3: 5159533+ 0.347 s/op
+Iteration   1: 3193229+ 0.253 s/op
+Iteration   2: 4075857+ 0.315 s/op
+Iteration   3: 2951408+ 0.242 s/op
+Iteration   4: 2679437+ 0.233 s/op
+Iteration   5: 2885857+ 0.245 s/op
+Iteration   6: 2708916+ 0.231 s/op
+Iteration   7: 3004508+ 0.263 s/op
+Iteration   8: 3077629+ 0.273 s/op
+Iteration   9: 3032829+ 0.263 s/op
+Iteration  10: 2606804+ 0.224 s/op
+
+# Run progress: 99.99% complete, ETA 00:00:00
+# Fork: 4 of 5
+# Warmup Iteration   1: 17703385+ 1.126 s/op
+# Warmup Iteration   2: 11029757+ 0.669 s/op
+# Warmup Iteration   3: 3910513+ 0.295 s/op
+Iteration   1: 3658193+ 0.251 s/op
+Iteration   2: 3788138+ 0.304 s/op
+Iteration   3: 2688774+ 0.236 s/op
+Iteration   4: 3100639+ 0.262 s/op
+Iteration   5: 2590997+ 0.233 s/op
+Iteration   6: 2709343+ 0.235 s/op
+Iteration   7: 3074821+ 0.270 s/op
+Iteration   8: 3074516+ 0.270 s/op
+Iteration   9: 3353080+ 0.278 s/op
+Iteration  10: 2542962+ 0.220 s/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 5 of 5
+# Warmup Iteration   1: 20067697+ 1.237 s/op
+# Warmup Iteration   2: 14982811+ 0.933 s/op
+# Warmup Iteration   3: 5324510+ 0.318 s/op
+Iteration   1: 4897876+ 0.296 s/op
+Iteration   2: 4773486+ 0.347 s/op
+Iteration   3: 2740838+ 0.235 s/op
+Iteration   4: 2881828+ 0.244 s/op
+Iteration   5: 2748895+ 0.235 s/op
+Iteration   6: 2514764+ 0.218 s/op
+Iteration   7: 2790825+ 0.246 s/op
+Iteration   8: 2915581+ 0.262 s/op
+Iteration   9: 2924736+ 0.250 s/op
+Iteration  10: 2509881+ 0.217 s/op
+
+
+Result "jackson.jackson.App.benchmarkSerializationWithGSON":
+  N = 50
+  mean =      0.256 ±(99.9%) 0.018 s/op
+
+  Histogram, s/op:
+    [0.200, 0.213) = 0 
+    [0.213, 0.225) = 8 
+    [0.225, 0.238) = 11 
+    [0.238, 0.250) = 7 
+    [0.250, 0.263) = 8 
+    [0.263, 0.275) = 8 
+    [0.275, 0.288) = 1 
+    [0.288, 0.300) = 1 
+    [0.300, 0.313) = 1 
+    [0.313, 0.325) = 1 
+    [0.325, 0.338) = 2 
+    [0.338, 0.350) = 1 
+    [0.350, 0.363) = 0 
+    [0.363, 0.375) = 0 
+    [0.375, 0.388) = 0 
+
+  Percentiles, s/op:
+      p(0.0000) =      0.217 s/op
+     p(50.0000) =      0.247 s/op
+     p(90.0000) =      0.314 s/op
+     p(95.0000) =      0.338 s/op
+     p(99.0000) =      0.396 s/op
+     p(99.9000) =      0.396 s/op
+     p(99.9900) =      0.396 s/op
+     p(99.9990) =      0.396 s/op
+     p(99.9999) =      0.396 s/op
+    p(100.0000) =      0.396 s/op
+
+
+# Run complete. Total time: 00:07:28
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                                    Mode  Cnt  Score   Error  Units
+App.benchmarkSerializationWithGSON                                          thrpt   50  4.467 ± 0.200  ops/s
+App.benchmarkSerializationWithGSON                                           avgt   50  0.232 ± 0.022   s/op
+App.benchmarkSerializationWithGSON                                         sample  468  0.230 ± 0.013   s/op
+App.benchmarkSerializationWithGSON:benchmarkSerializationWithGSON·p0.00    sample       0.211           s/op
+App.benchmarkSerializationWithGSON:benchmarkSerializationWithGSON·p0.50    sample       0.219           s/op
+App.benchmarkSerializationWithGSON:benchmarkSerializationWithGSON·p0.90    sample       0.237           s/op
+App.benchmarkSerializationWithGSON:benchmarkSerializationWithGSON·p0.95    sample       0.259           s/op
+App.benchmarkSerializationWithGSON:benchmarkSerializationWithGSON·p0.99    sample       0.294           s/op
+App.benchmarkSerializationWithGSON:benchmarkSerializationWithGSON·p0.999   sample       1.304           s/op
+App.benchmarkSerializationWithGSON:benchmarkSerializationWithGSON·p0.9999  sample       1.304           s/op
+App.benchmarkSerializationWithGSON:benchmarkSerializationWithGSON·p1.00    sample       1.304           s/op
+App.benchmarkSerializationWithGSON                                             ss   50  0.256 ± 0.018   s/op
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mjackson[0;1m ---[m
+[[1;34mINFO[m] Installing /home/jffk0586/eclipse-workspace/xstream/target/jackson-0.0.1-SNAPSHOT.jar to /home/jffk0586/.m2/repository/jackson/jackson/0.0.1-SNAPSHOT/jackson-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/jffk0586/eclipse-workspace/xstream/pom.xml to /home/jffk0586/.m2/repository/jackson/jackson/0.0.1-SNAPSHOT/jackson-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  07:31 min
+[[1;34mINFO[m] Finished at: 2020-09-04T02:34:27+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

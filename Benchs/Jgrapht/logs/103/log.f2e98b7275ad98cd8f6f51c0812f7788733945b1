@@ -1,0 +1,984 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for Jgrapht:Jgrapht:jar:0.0.1-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for Jgrapht:Jgrapht:jar should use a variable instead of a hard-coded path /home/jffk0586/eclipse-workspace/Jgrapht/jar/jgrapht.jar @ line 36, column 22
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 48, column 11
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------------< [0;36mJgrapht:Jgrapht[0;1m >---------------------------[m
+[[1;34mINFO[m] [1mBuilding Jgrapht 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mJgrapht[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/jffk0586/eclipse-workspace/Jgrapht/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mJgrapht[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jffk0586/eclipse-workspace/Jgrapht/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mJgrapht[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 2 source files to /home/jffk0586/eclipse-workspace/Jgrapht/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mJgrapht[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jffk0586/eclipse-workspace/Jgrapht/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mJgrapht[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/jffk0586/eclipse-workspace/Jgrapht/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mJgrapht[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/jffk0586/eclipse-workspace/Jgrapht/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running JsonBench.JsonBench.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mJgrapht[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/jffk0586/eclipse-workspace/Jgrapht/target/Jgrapht-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-shade-plugin:3.2.0:shade[m [1m(default)[m @ [36mJgrapht[0;1m ---[m
+[[1;34mINFO[m] Including org.openjdk.jmh:jmh-core:jar:1.22 in the shaded jar.
+[[1;34mINFO[m] Including net.sf.jopt-simple:jopt-simple:jar:4.6 in the shaded jar.
+[[1;34mINFO[m] Including org.apache.commons:commons-math3:jar:3.2 in the shaded jar.
+[[1;34mINFO[m] Including org.openjdk.jmh:jmh-generator-annprocess:jar:1.22 in the shaded jar.
+[[1;34mINFO[m] Replacing /home/jffk0586/eclipse-workspace/Jgrapht/target/benchmarks.jar with /home/jffk0586/eclipse-workspace/Jgrapht/target/Jgrapht-0.0.1-SNAPSHOT-shaded.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.0.0:exec[m [1m(run-benchmarks)[m @ [36mJgrapht[0;1m ---[m
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: commons.commons.App.graphPerformanceBenchmark
+
+# Run progress: 0.00% complete, ETA 00:06:30
+# Fork: 1 of 5
+# Warmup Iteration   1: 8777504+ 259887912688+ 10957308+ 259889917138+ 12721159+ 0.438 ops/s
+# Warmup Iteration   2: 2852898+ 259904692186+ 4623340+ 259907266886+ 6338058+ 1781184+ 259915426656+ 3820851+ 259918023513+ 5547653+ 0.528 ops/s
+# Warmup Iteration   3: 1853023+ 259925285761+ 3760610+ 259927141286+ 5698960+ 1824214+ 259934524873+ 3608389+ 259936328519+ 5396165+ 0.567 ops/s
+Iteration   1: 2132196+ 259943711801+ 4297413+ 259945832889+ 6632917+ 1809322+ 259954163738+ 3707938+ 259955985572+ 5433153+ 0.542 ops/s
+Iteration   2: 1830257+ 259963102436+ 3616996+ 259964920546+ 5350390+ 1855403+ 259972029294+ 3622122+ 259973839653+ 5376451+ 0.571 ops/s
+Iteration   3: 1805537+ 259980940160+ 3572195+ 259982766449+ 5276353+ 1871456+ 259990035655+ 3922538+ 259992072820+ 5626025+ 0.556 ops/s
+Iteration   4: 1832270+ 259999390430+ 3600637+ 260001208297+ 5321519+ 1811885+ 260008208461+ 3567130+ 260010037741+ 5284594+ 0.567 ops/s
+Iteration   5: 1841914+ 260017235599+ 3615469+ 260019028319+ 5337083+ 1844783+ 260026059978+ 3597525+ 260027879370+ 5423265+ 0.570 ops/s
+Iteration   6: 1812557+ 260035001422+ 3572745+ 260036822646+ 5698777+ 1787471+ 260044220942+ 3543998+ 260046048146+ 5266223+ 0.563 ops/s
+Iteration   7: 1841304+ 260053016696+ 3604605+ 260054840849+ 5360643+ 1830257+ 260061910411+ 3748953+ 260063747992+ 5470994+ 0.565 ops/s
+Iteration   8: 1811458+ 260070926013+ 3551566+ 260072730024+ 5278246+ 1803890+ 260079732997+ 3559256+ 260081572836+ 5280077+ 0.568 ops/s
+Iteration   9: 1797664+ 260088575809+ 3573661+ 260090422850+ 5342272+ 1839839+ 260097528118+ 3579703+ 260099341590+ 5293199+ 0.570 ops/s
+Iteration  10: 1812739+ 260106315755+ 3575490+ 260108618545+ 5294968+ 1782161+ 260115600459+ 3533194+ 260117411185+ 5255174+ 0.563 ops/s
+
+# Run progress: 6.67% complete, ETA 00:10:36
+# Fork: 2 of 5
+# Warmup Iteration   1: 7684306+ 260131172014+ 10590671+ 260133414379+ 12413176+ 0.466 ops/s
+# Warmup Iteration   2: 2231684+ 260147978550+ 4257253+ 260150613736+ 5983567+ 1775447+ 260158432198+ 3808157+ 260160545351+ 6047654+ 0.531 ops/s
+# Warmup Iteration   3: 1831660+ 260168290754+ 3673208+ 260170105752+ 5867355+ 1817562+ 260177648456+ 3589103+ 260179459060+ 5370470+ 0.566 ops/s
+Iteration   1: 2087153+ 260186806454+ 4131703+ 260188902945+ 6467696+ 1787776+ 260197051850+ 3520926+ 260198839748+ 5232348+ 0.546 ops/s
+Iteration   2: 1817378+ 260205759836+ 3543753+ 260207547001+ 5647447+ 1790889+ 260214895249+ 3547965+ 260216694377+ 5260424+ 0.564 ops/s
+Iteration   3: 1803890+ 260223686669+ 3573905+ 260225508991+ 5284533+ 1871455+ 260232768494+ 3901724+ 260234615352+ 5603624+ 0.556 ops/s
+Iteration   4: 1798152+ 260241888222+ 3521903+ 260243695712+ 5231860+ 1782527+ 260250596208+ 3539114+ 260252380505+ 5244737+ 0.571 ops/s
+Iteration   5: 1804500+ 260259367974+ 3542716+ 260261196583+ 5327562+ 1773128+ 260268186250+ 3520743+ 260269986417+ 5362596+ 0.571 ops/s
+Iteration   6: 1816035+ 260277025156+ 3551932+ 260278833012+ 5371447+ 1775325+ 260285868395+ 3509207+ 260287654951+ 5212633+ 0.573 ops/s
+Iteration   7: 1786860+ 260294566982+ 3518972+ 260296349570+ 5227464+ 1784724+ 260303227299+ 3793996+ 260305018432+ 5528611+ 0.577 ops/s
+Iteration   8: 1789851+ 260312334575+ 3521353+ 260314128943+ 5223009+ 1798457+ 260321055500+ 3557364+ 260322857741+ 5436815+ 0.567 ops/s
+Iteration   9: 2049067+ 260329968807+ 3805959+ 260331769584+ 5523667+ 1801143+ 260339020603+ 3584524+ 260340808746+ 5282700+ 0.571 ops/s
+Iteration  10: 1781611+ 260348009411+ 3560720+ 260349800422+ 5267320+ 1787471+ 260356732166+ 3529593+ 260358534896+ 5233141+ 0.565 ops/s
+
+# Run progress: 13.33% complete, ETA 00:09:48
+# Fork: 3 of 5
+# Warmup Iteration   1: 8757729+ 260373388007+ 11945587+ 260375807435+ 13707789+ 0.438 ops/s
+# Warmup Iteration   2: 2307489+ 260391811422+ 4136647+ 260394503188+ 5839828+ 1769954+ 260402143488+ 3805410+ 260405157091+ 5538499+ 0.524 ops/s
+# Warmup Iteration   3: 1952388+ 260412403898+ 3704154+ 260414206933+ 5969895+ 1784358+ 260421850286+ 3515005+ 260423642640+ 5290391+ 0.564 ops/s
+Iteration   1: 2079096+ 260430916242+ 4130543+ 260433086952+ 6527876+ 1777827+ 260441305864+ 3515249+ 260443091504+ 5208726+ 0.545 ops/s
+Iteration   2: 1815669+ 260450012933+ 3553641+ 260451814869+ 5827195+ 1768001+ 260459336762+ 3503043+ 260461157009+ 5202928+ 0.563 ops/s
+Iteration   3: 1813106+ 260468019357+ 3561636+ 260469823308+ 5300096+ 1919429+ 260477106369+ 4193655+ 260478893534+ 5896105+ 0.558 ops/s
+Iteration   4: 1806941+ 260486459312+ 3528067+ 260488279742+ 5229845+ 1801692+ 260495181336+ 3530630+ 260496985287+ 5253282+ 0.570 ops/s
+Iteration   5: 1954829+ 260503933144+ 3703360+ 260505724704+ 5419787+ 1766536+ 260512832047+ 3522452+ 260514620251+ 5230089+ 0.579 ops/s
+Iteration   6: 1793880+ 260521547723+ 3536490+ 260523480030+ 5244555+ 1811885+ 260530453218+ 3603018+ 260532264920+ 5338487+ 0.578 ops/s
+Iteration   7: 1798091+ 260539316538+ 3538809+ 260541129338+ 5314623+ 1782833+ 260548254502+ 3539665+ 260550042705+ 5243762+ 0.577 ops/s
+Iteration   8: 1804378+ 260556974085+ 3543143+ 260558768270+ 5260790+ 1794551+ 260565730472+ 3528860+ 260567527709+ 5320237+ 0.578 ops/s
+Iteration   9: 1774532+ 260574527507+ 3515616+ 260576316138+ 5258165+ 1796565+ 260583396198+ 3544852+ 260585197951+ 5249742+ 0.571 ops/s
+Iteration  10: 1778072+ 260592127742+ 3767508+ 260593923331+ 5484483+ 1786861+ 260601089328+ 3510734+ 260602890959+ 5214892+ 0.576 ops/s
+
+# Run progress: 20.00% complete, ETA 00:09:02
+# Fork: 4 of 5
+# Warmup Iteration   1: 7708782+ 260616755426+ 10792941+ 260619338550+ 12509001+ 0.455 ops/s
+# Warmup Iteration   2: 2257135+ 260634320201+ 4010854+ 260636814335+ 5760117+ 1801936+ 260644358688+ 3862905+ 260646456278+ 5892502+ 0.538 ops/s
+# Warmup Iteration   3: 1815303+ 260654020285+ 3741506+ 260655804887+ 5706040+ 1813106+ 260663190854+ 3560416+ 260664960564+ 5350328+ 0.573 ops/s
+Iteration   1: 2065242+ 260672276280+ 4142141+ 260674366545+ 6452743+ 1792720+ 260682501352+ 3536612+ 260684294316+ 5230028+ 0.538 ops/s
+Iteration   2: 1780940+ 260691217821+ 3513724+ 260693052228+ 5224108+ 1926448+ 260699981653+ 3675711+ 260701784139+ 5374803+ 0.578 ops/s
+Iteration   3: 1804622+ 260708863528+ 3586478+ 260710651609+ 5301683+ 1788265+ 260717828165+ 3807425+ 260720207920+ 5534288+ 0.549 ops/s
+Iteration   4: 1777888+ 260727413774+ 3522390+ 260729210401+ 5233506+ 1785151+ 260736119868+ 3606191+ 260737900686+ 5315903+ 0.571 ops/s
+Iteration   5: 1810054+ 260744918062+ 3658865+ 260746706449+ 5352891+ 1785518+ 260753737742+ 3528982+ 260755544317+ 5241807+ 0.574 ops/s
+Iteration   6: 1791499+ 260762487781+ 3541982+ 260764303267+ 5260972+ 2248408+ 260771224024+ 4002310+ 260773013753+ 5711474+ 0.560 ops/s
+Iteration   7: 1794551+ 260780448001+ 3545156+ 260782229613+ 5269578+ 1795650+ 260789178324+ 3575431+ 260790988866+ 5657091+ 0.568 ops/s
+Iteration   8: 1783992+ 260798335528+ 3507193+ 260800143080+ 5224290+ 1779537+ 260807088496+ 3525748+ 260808917044+ 5224413+ 0.571 ops/s
+Iteration   9: 1800715+ 260815820347+ 3857595+ 260817605193+ 5574449+ 1795344+ 260824904430+ 3545462+ 260826689764+ 5239916+ 0.571 ops/s
+Iteration  10: 1781307+ 260833591541+ 3521170+ 260835538375+ 5269761+ 1781795+ 260842524074+ 3509330+ 260844352743+ 5217456+ 0.567 ops/s
+
+# Run progress: 26.66% complete, ETA 00:08:17
+# Fork: 5 of 5
+# Warmup Iteration   1: 7357891+ 260857608143+ 10377231+ 260860108930+ 12237090+ 0.451 ops/s
+# Warmup Iteration   2: 2260004+ 260875052922+ 4012868+ 260877695066+ 5733750+ 1803401+ 260885167886+ 3846853+ 260887257786+ 6094833+ 0.535 ops/s
+# Warmup Iteration   3: 1846919+ 260895063674+ 3590384+ 260896876901+ 5756883+ 1870601+ 260904339712+ 3627432+ 260906158250+ 5375841+ 0.576 ops/s
+Iteration   1: 1962275+ 260913598478+ 4003712+ 260915814232+ 6016646+ 2006892+ 260923661989+ 3750479+ 260925453244+ 5459032+ 0.541 ops/s
+Iteration   2: 1832759+ 260932607828+ 3596732+ 260934421422+ 5316759+ 2092890+ 260941433733+ 3849173+ 260943258069+ 5559373+ 0.571 ops/s
+Iteration   3: 1823848+ 260950512873+ 3557181+ 260952322621+ 5312548+ 1802974+ 260959459932+ 3837393+ 260961883876+ 5538621+ 0.554 ops/s
+Iteration   4: 1796932+ 260969105659+ 3548270+ 260970918826+ 5287218+ 1795345+ 260977877670+ 3554191+ 260979687541+ 5261218+ 0.572 ops/s
+Iteration   5: 1823054+ 260987177147+ 3568899+ 260989009052+ 5286423+ 1782467+ 260995989745+ 3545585+ 260997838617+ 5235461+ 0.564 ops/s
+Iteration   6: 1801387+ 261004760292+ 3574820+ 261006573520+ 5759446+ 1846614+ 261014018814+ 3645742+ 261015839732+ 5365526+ 0.565 ops/s
+Iteration   7: 1820674+ 261022903190+ 3564078+ 261024777880+ 5293566+ 1789790+ 261031763520+ 3805226+ 261033571499+ 5550766+ 0.567 ops/s
+Iteration   8: 1807552+ 261040808478+ 3565971+ 261042615175+ 5287524+ 1802669+ 261049604965+ 3556754+ 261051410380+ 5288378+ 0.571 ops/s
+Iteration   9: 2269403+ 261058387597+ 3997792+ 261060197346+ 5721298+ 1811031+ 261067695983+ 3558646+ 261069494196+ 5282519+ 0.565 ops/s
+Iteration  10: 1806697+ 261076462624+ 3544912+ 261078730075+ 5251511+ 1802242+ 261085661330+ 3547538+ 261087466074+ 5260119+ 0.564 ops/s
+
+
+Result "commons.commons.App.graphPerformanceBenchmark":
+  0.565 ±(99.9%) 0.005 ops/s [Average]
+  (min, avg, max) = (0.538, 0.565, 0.579), stdev = 0.010
+  CI (99.9%): [0.560, 0.570] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: commons.commons.App.graphPerformanceBenchmark
+
+# Run progress: 33.33% complete, ETA 00:07:32
+# Fork: 1 of 5
+# Warmup Iteration   1: 8690957+ 261101713474+ 11129733+ 261104336941+ 12929472+ 2.327 s/op
+# Warmup Iteration   2: 2237726+ 261119928760+ 3999379+ 261122432599+ 5731613+ 1810543+ 261129904869+ 3874014+ 261132008135+ 6222458+ 1.862 s/op
+# Warmup Iteration   3: 1866816+ 261139927488+ 3758535+ 261141738702+ 6127059+ 1806636+ 261149566745+ 3570853+ 261151390349+ 5310411+ 1.765 s/op
+Iteration   1: 1997005+ 261158670420+ 4059072+ 261160792974+ 6070602+ 2121027+ 261168558152+ 3886831+ 261170375530+ 5597581+ 1.844 s/op
+Iteration   2: 1799556+ 261177689049+ 3544730+ 261179511920+ 5323595+ 2064021+ 261186536499+ 3831473+ 261188342463+ 5583056+ 1.773 s/op
+Iteration   3: 1834774+ 261195619727+ 3581596+ 261197467317+ 5296070+ 1794673+ 261204537979+ 3730765+ 261206630380+ 5514696+ 1.789 s/op
+Iteration   4: 1815242+ 261213829459+ 3575248+ 261215643785+ 5284716+ 1806025+ 261222615570+ 3570303+ 261224434718+ 5303453+ 1.758 s/op
+Iteration   5: 1835567+ 261231534064+ 3650931+ 261233357668+ 5377367+ 1796749+ 261240440902+ 3721060+ 261242258952+ 5540940+ 1.763 s/op
+Iteration   6: 1811763+ 261249504051+ 3560232+ 261251329791+ 5286424+ 1870906+ 261258307556+ 3625052+ 261260134272+ 5377733+ 1.744 s/op
+Iteration   7: 1820796+ 261267194069+ 3578787+ 261268993686+ 5297533+ 1833003+ 261276011185+ 3584219+ 261277906871+ 5306871+ 1.745 s/op
+Iteration   8: 1809505+ 261284916923+ 3542228+ 261286725085+ 5264147+ 1831356+ 261293719086+ 3579337+ 261295540492+ 5298693+ 1.762 s/op
+Iteration   9: 1819270+ 261302655404+ 3622976+ 261304481633+ 5359299+ 1851252+ 261311603868+ 3624868+ 261313438763+ 5360154+ 1.738 s/op
+Iteration  10: 1819759+ 261320485558+ 3584098+ 261322693010+ 5314929+ 1798701+ 261329708191+ 3561148+ 261331528011+ 5327134+ 1.766 s/op
+
+# Run progress: 39.99% complete, ETA 00:06:47
+# Fork: 2 of 5
+# Warmup Iteration   1: 8311807+ 261345278952+ 11811920+ 261348814588+ 13567470+ 2.280 s/op
+# Warmup Iteration   2: 2241266+ 261365205842+ 3949331+ 261367806238+ 5669480+ 1782649+ 261375192145+ 3826894+ 261377294068+ 6171249+ 1.864 s/op
+# Warmup Iteration   3: 1957941+ 261385157208+ 3717274+ 261386952736+ 6070112+ 1795162+ 261394691667+ 3553702+ 261396486767+ 5245226+ 1.771 s/op
+Iteration   1: 1926814+ 261403697870+ 3951528+ 261405887073+ 5948837+ 2108821+ 261413524443+ 3845572+ 261415337243+ 5563036+ 1.838 s/op
+Iteration   2: 1802669+ 261422583746+ 3553519+ 261424382326+ 5277208+ 2109187+ 261431389571+ 3866384+ 261433202006+ 5579819+ 1.769 s/op
+Iteration   3: 1820186+ 261440470175+ 3652030+ 261442299455+ 5376330+ 1793513+ 261449459167+ 3747304+ 261451572260+ 5514328+ 1.788 s/op
+Iteration   4: 1805354+ 261458780004+ 3541983+ 261460606843+ 5252123+ 1776240+ 261467544142+ 3534232+ 261469335885+ 5262682+ 1.750 s/op
+Iteration   5: 1813655+ 261476288321+ 3625113+ 261478088365+ 5339952+ 1796627+ 261485121855+ 3524772+ 261486950402+ 5279651+ 1.742 s/op
+Iteration   6: 1808345+ 261493901435+ 3574698+ 261495730349+ 5289171+ 1829463+ 261502756088+ 3631094+ 261504580974+ 5336411+ 1.737 s/op
+Iteration   7: 1857356+ 261511644859+ 3648123+ 261513461322+ 5377366+ 1774532+ 261520506896+ 3528678+ 261522357783+ 5243822+ 1.744 s/op
+Iteration   8: 1796382+ 261529282570+ 3528678+ 261531069919+ 5245775+ 1785701+ 261538015824+ 3543753+ 261539844006+ 5244493+ 1.757 s/op
+Iteration   9: 1809504+ 261546873957+ 3551442+ 261548665640+ 5332138+ 1795955+ 261555733613+ 3535697+ 261557534634+ 5394945+ 1.734 s/op
+Iteration  10: 1856502+ 261564626473+ 3578544+ 261566943301+ 5283190+ 1789424+ 261573907883+ 3549796+ 261575705119+ 5632799+ 1.780 s/op
+
+# Run progress: 46.66% complete, ETA 00:06:01
+# Fork: 3 of 5
+# Warmup Iteration   1: 8989845+ 261589527533+ 13091458+ 261591923706+ 14823143+ 2.247 s/op
+# Warmup Iteration   2: 2273859+ 261609128740+ 4040273+ 261611618968+ 5809190+ 1800837+ 261619280509+ 3890310+ 261622158553+ 6620833+ 1.931 s/op
+# Warmup Iteration   3: 2981010+ 261630901512+ 4821337+ 261633385759+ 7248638+ 2.016 s/op
+Iteration   1: 2561883+ 261642592583+ 4304676+ 261644422352+ 6085799+ 2090754+ 261652480131+ 4186085+ 261654594445+ 6398359+ 1.930 s/op
+Iteration   2: 1814692+ 261662668704+ 3566152+ 261664472960+ 5286790+ 1805171+ 261671431743+ 3553823+ 261673220923+ 5701340+ 1.765 s/op
+Iteration   3: 1813716+ 261680613909+ 3630362+ 261682434217+ 5335618+ 1796932+ 261689453485+ 3553337+ 261691294849+ 5257984+ 1.772 s/op
+Iteration   4: 1950251+ 261698538485+ 3830922+ 261700336943+ 5551681+ 1807979+ 261707592844+ 3554312+ 261709405156+ 5264147+ 1.800 s/op
+Iteration   5: 1815608+ 261716408190+ 3582815+ 261718301191+ 5614426+ 1826716+ 261725601099+ 3574453+ 261727407308+ 5296494+ 1.786 s/op
+Iteration   6: 1887203+ 261734404115+ 3636100+ 261736230404+ 5361925+ 1790462+ 261743284708+ 3778555+ 261745085912+ 5488877+ 1.762 s/op
+Iteration   7: 1850337+ 261752305193+ 3606375+ 261754115430+ 5328294+ 1791622+ 261761137994+ 3561393+ 261762934315+ 5296374+ 1.771 s/op
+Iteration   8: 1864680+ 261769929782+ 3609304+ 261771746062+ 5332932+ 1785945+ 261778751170+ 3570059+ 261780574530+ 5280076+ 1.756 s/op
+Iteration   9: 1797298+ 261787553698+ 3536674+ 261789410749+ 5288622+ 1817684+ 261796374842+ 3583671+ 261798169027+ 5304431+ 1.760 s/op
+Iteration  10: 1825801+ 261805249454+ 3567801+ 261807050780+ 5332689+ 1871028+ 261814059673+ 3626639+ 261815881446+ 5362840+ 1.758 s/op
+
+# Run progress: 53.32% complete, ETA 00:05:15
+# Fork: 4 of 5
+# Warmup Iteration   1: 8179606+ 261829392946+ 11540072+ 261832561028+ 13466337+ 2.289 s/op
+# Warmup Iteration   2: 2290887+ 261848572708+ 4060841+ 261850490184+ 6340742+ 2043818+ 261858546071+ 4114735+ 261860657516+ 6527082+ 1.855 s/op
+# Warmup Iteration   3: 1895076+ 261868886315+ 3733145+ 261870707660+ 6213058+ 1833979+ 261878625366+ 3602773+ 261880462092+ 5333298+ 1.795 s/op
+Iteration   1: 1973079+ 261887893102+ 4034353+ 261890011199+ 6076951+ 2419061+ 261897813854+ 4183643+ 261899647407+ 5924056+ 1.856 s/op
+Iteration   2: 1836909+ 261907314440+ 3649282+ 261909134504+ 5393235+ 2012324+ 261916242822+ 3777334+ 261918100178+ 5533922+ 1.785 s/op
+Iteration   3: 1839045+ 261925336794+ 3614065+ 261927181210+ 5382615+ 1844051+ 261934350625+ 3815786+ 261936478549+ 5660081+ 1.809 s/op
+Iteration   4: 1830440+ 261943852004+ 3602408+ 261945719370+ 5349474+ 1827205+ 261952771293+ 3611136+ 261954622301+ 5358141+ 1.774 s/op
+Iteration   5: 1850704+ 261961704253+ 3666434+ 261963562464+ 5418077+ 1822200+ 261970683906+ 3595450+ 261972538027+ 5333483+ 1.764 s/op
+Iteration   6: 1826900+ 261979567672+ 3606986+ 261981416483+ 5342882+ 1866695+ 261988460654+ 3673026+ 261990287554+ 5400866+ 1.764 s/op
+Iteration   7: 1836726+ 261997385864+ 3605948+ 261999300776+ 5362474+ 1812129+ 262006378395+ 3697744+ 262008245700+ 5430772+ 1.763 s/op
+Iteration   8: 1809078+ 262015382521+ 3588188+ 262017204782+ 5328234+ 1823848+ 262024262626+ 3565360+ 262026108507+ 5300707+ 1.776 s/op
+Iteration   9: 2101435+ 262033136139+ 3909719+ 262034982692+ 5680039+ 1823970+ 262042448920+ 3598196+ 262044288149+ 5353502+ 1.770 s/op
+Iteration  10: 1824215+ 262051367598+ 3717459+ 262053217386+ 5459947+ 1817500+ 262060393210+ 3609732+ 262062230852+ 5343248+ 1.746 s/op
+
+# Run progress: 59.99% complete, ETA 00:04:30
+# Fork: 5 of 5
+# Warmup Iteration   1: 8777138+ 262076114239+ 11114779+ 262078569616+ 12821684+ 2.275 s/op
+# Warmup Iteration   2: 2179865+ 262094164852+ 3923025+ 262096716664+ 5667588+ 1799984+ 262104125092+ 3877493+ 262106246791+ 6231552+ 1.854 s/op
+# Warmup Iteration   3: 1873286+ 262114163642+ 3647268+ 262115991091+ 6028792+ 1924068+ 262123719280+ 3667716+ 262125556128+ 5396472+ 1.769 s/op
+Iteration   1: 1954890+ 262132966816+ 4017690+ 262135185682+ 6035324+ -262141207152+ 262142908075+ -262139423465+ 262144737111+ -262137709603+ 1.842 s/op
+Iteration   2: 1909419+ 8829628+ 3692922+ 10780734+ 6650434+ 4416798+ 19587840+ 6304549+ 21696783+ 9958287+ 1.965 s/op
+Iteration   3: 3688406+ 33860509+ 6803144+ 36777860+ 8518715+ 2.092 s/op
+Iteration   4: 1841365+ 48320860+ 5352037+ 52415576+ 7939738+ 2.123 s/op
+Iteration   5: 1864985+ 62034387+ 4554370+ 65247636+ 7339580+ 2332819+ 75228322+ 5246874+ 77527389+ 7146405+ 1.975 s/op
+Iteration   6: 1852229+ 86444236+ 3805716+ 88568376+ 5557847+ 1777584+ 95791380+ 3515006+ 97608758+ 5232226+ 1.837 s/op
+Iteration   7: 1795833+ 104525489+ 3545035+ 106332918+ 5249437+ 1930599+ 113279677+ 3747184+ 115089853+ 5468798+ 1.753 s/op
+Iteration   8: 1786494+ 122269096+ 3545767+ 124075854+ 5273668+ 1803889+ 131021454+ 3556631+ 132943935+ 5301743+ 1.734 s/op
+Iteration   9: 1834651+ 139951546+ 3591848+ 141755436+ 5298630+ 1813167+ 148775314+ 3561698+ 150689371+ 5273303+ 1.765 s/op
+Iteration  10: 1802425+ 157957297+ 3549735+ 159776934+ 5278185+ 1890193+ 166824340+ 3650565+ 168648554+ 5358690+ 1.752 s/op
+
+
+Result "commons.commons.App.graphPerformanceBenchmark":
+  1.797 ±(99.9%) 0.041 s/op [Average]
+  (min, avg, max) = (1.734, 1.797, 2.123), stdev = 0.083
+  CI (99.9%): [1.755, 1.838] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: commons.commons.App.graphPerformanceBenchmark
+
+# Run progress: 66.66% complete, ETA 00:03:44
+# Fork: 1 of 5
+# Warmup Iteration   1: 8204752+ 183205707+ 11525117+ 185701673+ 13255764+ 2.303 s/op
+# Warmup Iteration   2: 2265070+ 201504427+ 4381215+ 203513577+ 6499618+ 1808528+ 211721565+ 3854787+ 213858034+ 6199996+ 1.840 s/op
+# Warmup Iteration   3: 1834041+ 221763348+ 3602041+ 223568764+ 5986739+ 1810970+ 231229876+ 3569998+ 233029005+ 5278978+ 1.774 s/op
+Iteration   1: 1960566+ 240306697+ 3992848+ 242419179+ 6076461+ 2125727+ 250195587+ 3871084+ 252027430+ 5584154+ 1.839 s/op
+                 graphPerformanceBenchmark·p0.00:   1.743 s/op
+                 graphPerformanceBenchmark·p0.50:   1.839 s/op
+                 graphPerformanceBenchmark·p0.90:   1.936 s/op
+                 graphPerformanceBenchmark·p0.95:   1.936 s/op
+                 graphPerformanceBenchmark·p0.99:   1.936 s/op
+                 graphPerformanceBenchmark·p0.999:  1.936 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.936 s/op
+                 graphPerformanceBenchmark·p1.00:   1.936 s/op
+
+Iteration   2: 1823177+ 259361457+ 3617056+ 261174502+ 5358018+ 1991755+ 268243759+ 3799306+ 270067851+ 5504319+ 1.765 s/op
+                 graphPerformanceBenchmark·p0.00:   1.755 s/op
+                 graphPerformanceBenchmark·p0.50:   1.765 s/op
+                 graphPerformanceBenchmark·p0.90:   1.774 s/op
+                 graphPerformanceBenchmark·p0.95:   1.774 s/op
+                 graphPerformanceBenchmark·p0.99:   1.774 s/op
+                 graphPerformanceBenchmark·p0.999:  1.774 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.774 s/op
+                 graphPerformanceBenchmark·p1.00:   1.774 s/op
+
+Iteration   3: 1886226+ 277246604+ 3658377+ 279059466+ 5373399+ 1807613+ 286182189+ 3757010+ 288323113+ 5572741+ 1.786 s/op
+                 graphPerformanceBenchmark·p0.00:   1.749 s/op
+                 graphPerformanceBenchmark·p0.50:   1.786 s/op
+                 graphPerformanceBenchmark·p0.90:   1.822 s/op
+                 graphPerformanceBenchmark·p0.95:   1.822 s/op
+                 graphPerformanceBenchmark·p0.99:   1.822 s/op
+                 graphPerformanceBenchmark·p0.999:  1.822 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.822 s/op
+                 graphPerformanceBenchmark·p1.00:   1.822 s/op
+
+Iteration   4: 1830135+ 295597814+ 3566154+ 297459015+ 5283679+ 1805049+ 304431105+ 3572440+ 306256905+ 5303820+ 1.754 s/op
+                 graphPerformanceBenchmark·p0.00:   1.751 s/op
+                 graphPerformanceBenchmark·p0.50:   1.754 s/op
+                 graphPerformanceBenchmark·p0.90:   1.757 s/op
+                 graphPerformanceBenchmark·p0.95:   1.757 s/op
+                 graphPerformanceBenchmark·p0.99:   1.757 s/op
+                 graphPerformanceBenchmark·p0.999:  1.757 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.757 s/op
+                 graphPerformanceBenchmark·p1.00:   1.757 s/op
+
+Iteration   5: 1818233+ 313235220+ 3620231+ 315046982+ 5327197+ 1822689+ 322062101+ 3564201+ 323903710+ 5267078+ 1.752 s/op
+                 graphPerformanceBenchmark·p0.00:   1.749 s/op
+                 graphPerformanceBenchmark·p0.50:   1.752 s/op
+                 graphPerformanceBenchmark·p0.90:   1.755 s/op
+                 graphPerformanceBenchmark·p0.95:   1.755 s/op
+                 graphPerformanceBenchmark·p0.99:   1.755 s/op
+                 graphPerformanceBenchmark·p0.999:  1.755 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.755 s/op
+                 graphPerformanceBenchmark·p1.00:   1.755 s/op
+
+Iteration   6: 1860102+ 330852181+ 3609609+ 332665836+ 5379380+ 1809565+ 339737961+ 3569814+ 341548809+ 5300095+ 1.758 s/op
+                 graphPerformanceBenchmark·p0.00:   1.751 s/op
+                 graphPerformanceBenchmark·p0.50:   1.758 s/op
+                 graphPerformanceBenchmark·p0.90:   1.766 s/op
+                 graphPerformanceBenchmark·p0.95:   1.766 s/op
+                 graphPerformanceBenchmark·p0.99:   1.766 s/op
+                 graphPerformanceBenchmark·p0.999:  1.766 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.766 s/op
+                 graphPerformanceBenchmark·p1.00:   1.766 s/op
+
+Iteration   7: 1840693+ 348620445+ 3600760+ 350438311+ 5331835+ 1818355+ 357450256+ 3605826+ 359327143+ 5309557+ 1.755 s/op
+                 graphPerformanceBenchmark·p0.00:   1.753 s/op
+                 graphPerformanceBenchmark·p0.50:   1.755 s/op
+                 graphPerformanceBenchmark·p0.90:   1.757 s/op
+                 graphPerformanceBenchmark·p0.95:   1.757 s/op
+                 graphPerformanceBenchmark·p0.99:   1.757 s/op
+                 graphPerformanceBenchmark·p0.999:  1.757 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.757 s/op
+                 graphPerformanceBenchmark·p1.00:   1.757 s/op
+
+Iteration   8: 1797114+ 366325356+ 3547598+ 368146823+ 5253954+ 1815669+ 375112687+ 3565420+ 376907360+ 5285265+ 1.751 s/op
+                 graphPerformanceBenchmark·p0.00:   1.751 s/op
+                 graphPerformanceBenchmark·p0.50:   1.751 s/op
+                 graphPerformanceBenchmark·p0.90:   1.751 s/op
+                 graphPerformanceBenchmark·p0.95:   1.751 s/op
+                 graphPerformanceBenchmark·p0.99:   1.751 s/op
+                 graphPerformanceBenchmark·p0.999:  1.751 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.751 s/op
+                 graphPerformanceBenchmark·p1.00:   1.751 s/op
+
+Iteration   9: 1892817+ 383892328+ 3644948+ 385708120+ 5362473+ 1817134+ 392817658+ 3569571+ 394622585+ 5286242+ 1.728 s/op
+                 graphPerformanceBenchmark·p0.00:   1.711 s/op
+                 graphPerformanceBenchmark·p0.50:   1.728 s/op
+                 graphPerformanceBenchmark·p0.90:   1.745 s/op
+                 graphPerformanceBenchmark·p0.95:   1.745 s/op
+                 graphPerformanceBenchmark·p0.99:   1.745 s/op
+                 graphPerformanceBenchmark·p0.999:  1.745 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.745 s/op
+                 graphPerformanceBenchmark·p1.00:   1.745 s/op
+
+Iteration  10: 1913081+ 401606576+ 3752371+ 403445378+ 5497422+ 1939509+ 410648729+ 3684133+ 412454389+ 5418747+ 1.748 s/op
+                 graphPerformanceBenchmark·p0.00:   1.732 s/op
+                 graphPerformanceBenchmark·p0.50:   1.748 s/op
+                 graphPerformanceBenchmark·p0.90:   1.764 s/op
+                 graphPerformanceBenchmark·p0.95:   1.764 s/op
+                 graphPerformanceBenchmark·p0.99:   1.764 s/op
+                 graphPerformanceBenchmark·p0.999:  1.764 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.764 s/op
+                 graphPerformanceBenchmark·p1.00:   1.764 s/op
+
+
+# Run progress: 73.32% complete, ETA 00:02:59
+# Fork: 2 of 5
+# Warmup Iteration   1: 8193705+ 426916753+ 10964755+ 429615965+ 12671660+ 2.298 s/op
+# Warmup Iteration   2: 2268915+ 444857747+ 4019277+ 447792188+ 5729600+ 1861384+ 455370538+ 3945791+ 458552109+ 5666062+ 1.938 s/op
+# Warmup Iteration   3: 1897150+ 465939359+ 3793752+ 467753685+ 6011154+ 1841731+ 475450382+ 3612295+ 477271239+ 5345384+ 1.784 s/op
+Iteration   1: 2088739+ 484628093+ 4187000+ 486748022+ 6542890+ 1819514+ 494992141+ 3619802+ 496811167+ 5356981+ 1.850 s/op
+                 graphPerformanceBenchmark·p0.00:   1.760 s/op
+                 graphPerformanceBenchmark·p0.50:   1.850 s/op
+                 graphPerformanceBenchmark·p0.90:   1.940 s/op
+                 graphPerformanceBenchmark·p0.95:   1.940 s/op
+                 graphPerformanceBenchmark·p0.99:   1.940 s/op
+                 graphPerformanceBenchmark·p0.999:  1.940 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.940 s/op
+                 graphPerformanceBenchmark·p1.00:   1.940 s/op
+
+Iteration   2: 1874201+ 503873527+ 3655203+ 505702501+ 5595262+ 1797786+ 513000944+ 3556327+ 514855614+ 5278003+ 1.743 s/op
+                 graphPerformanceBenchmark·p0.00:   1.724 s/op
+                 graphPerformanceBenchmark·p0.50:   1.743 s/op
+                 graphPerformanceBenchmark·p0.90:   1.762 s/op
+                 graphPerformanceBenchmark·p0.95:   1.762 s/op
+                 graphPerformanceBenchmark·p0.99:   1.762 s/op
+                 graphPerformanceBenchmark·p0.999:  1.762 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.762 s/op
+                 graphPerformanceBenchmark·p1.00:   1.762 s/op
+
+Iteration   3: 1933894+ 521831305+ 3705984+ 523657900+ 5503037+ 2002254+ 531170270+ 4741382+ 532997353+ 6456466+ 1.833 s/op
+                 graphPerformanceBenchmark·p0.00:   1.772 s/op
+                 graphPerformanceBenchmark·p0.50:   1.833 s/op
+                 graphPerformanceBenchmark·p0.90:   1.894 s/op
+                 graphPerformanceBenchmark·p0.95:   1.894 s/op
+                 graphPerformanceBenchmark·p0.99:   1.894 s/op
+                 graphPerformanceBenchmark·p0.999:  1.894 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.894 s/op
+                 graphPerformanceBenchmark·p1.00:   1.894 s/op
+
+Iteration   4: 1812983+ 541151264+ 3550283+ 542955703+ 5271226+ 1810115+ 549903255+ 3548819+ 551704032+ 5469956+ 1.741 s/op
+                 graphPerformanceBenchmark·p0.00:   1.715 s/op
+                 graphPerformanceBenchmark·p0.50:   1.741 s/op
+                 graphPerformanceBenchmark·p0.90:   1.766 s/op
+                 graphPerformanceBenchmark·p0.95:   1.766 s/op
+                 graphPerformanceBenchmark·p0.99:   1.766 s/op
+                 graphPerformanceBenchmark·p0.999:  1.766 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.766 s/op
+                 graphPerformanceBenchmark·p1.00:   1.766 s/op
+
+Iteration   5: 1798518+ 558864292+ 3527273+ 560682586+ 5228990+ 1800349+ 567593884+ 3548696+ 569440376+ 5257066+ 1.763 s/op
+                 graphPerformanceBenchmark·p0.00:   1.762 s/op
+                 graphPerformanceBenchmark·p0.50:   1.763 s/op
+                 graphPerformanceBenchmark·p0.90:   1.764 s/op
+                 graphPerformanceBenchmark·p0.95:   1.764 s/op
+                 graphPerformanceBenchmark·p0.99:   1.764 s/op
+                 graphPerformanceBenchmark·p0.999:  1.764 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.764 s/op
+                 graphPerformanceBenchmark·p1.00:   1.764 s/op
+
+Iteration   6: 1791744+ 576373707+ 3725576+ 578192306+ 5451768+ 1807674+ 585319912+ 3568900+ 587126792+ 5287096+ 1.763 s/op
+                 graphPerformanceBenchmark·p0.00:   1.762 s/op
+                 graphPerformanceBenchmark·p0.50:   1.763 s/op
+                 graphPerformanceBenchmark·p0.90:   1.764 s/op
+                 graphPerformanceBenchmark·p0.95:   1.764 s/op
+                 graphPerformanceBenchmark·p0.99:   1.764 s/op
+                 graphPerformanceBenchmark·p0.999:  1.764 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.764 s/op
+                 graphPerformanceBenchmark·p1.00:   1.764 s/op
+
+Iteration   7: 1832332+ 594114262+ 3605399+ 595956725+ 5798997+ 1789546+ 603432049+ 3552664+ 605236793+ 5280259+ 1.784 s/op
+                 graphPerformanceBenchmark·p0.00:   1.755 s/op
+                 graphPerformanceBenchmark·p0.50:   1.784 s/op
+                 graphPerformanceBenchmark·p0.90:   1.812 s/op
+                 graphPerformanceBenchmark·p0.95:   1.812 s/op
+                 graphPerformanceBenchmark·p0.99:   1.812 s/op
+                 graphPerformanceBenchmark·p0.999:  1.812 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.812 s/op
+                 graphPerformanceBenchmark·p1.00:   1.812 s/op
+
+Iteration   8: 1813838+ 612218159+ 3584646+ 614025833+ 5362229+ 1822872+ 621093318+ 3683524+ 622900565+ 5429735+ 1.737 s/op
+                 graphPerformanceBenchmark·p0.00:   1.713 s/op
+                 graphPerformanceBenchmark·p0.50:   1.737 s/op
+                 graphPerformanceBenchmark·p0.90:   1.762 s/op
+                 graphPerformanceBenchmark·p0.95:   1.762 s/op
+                 graphPerformanceBenchmark·p0.99:   1.762 s/op
+                 graphPerformanceBenchmark·p0.999:  1.762 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.762 s/op
+                 graphPerformanceBenchmark·p1.00:   1.762 s/op
+
+Iteration   9: 1819942+ 630018223+ 3574332+ 631835418+ 5309496+ 1826716+ 638895093+ 3601187+ 640696052+ 5342516+ 1.765 s/op
+                 graphPerformanceBenchmark·p0.00:   1.762 s/op
+                 graphPerformanceBenchmark·p0.50:   1.765 s/op
+                 graphPerformanceBenchmark·p0.90:   1.768 s/op
+                 graphPerformanceBenchmark·p0.95:   1.768 s/op
+                 graphPerformanceBenchmark·p0.99:   1.768 s/op
+                 graphPerformanceBenchmark·p0.999:  1.768 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.768 s/op
+                 graphPerformanceBenchmark·p1.00:   1.768 s/op
+
+Iteration  10: 1842769+ 647727711+ 3588370+ 649624374+ 5393480+ 1832820+ 656702359+ 3583182+ 658508506+ 5286486+ 1.763 s/op
+                 graphPerformanceBenchmark·p0.00:   1.757 s/op
+                 graphPerformanceBenchmark·p0.50:   1.763 s/op
+                 graphPerformanceBenchmark·p0.90:   1.768 s/op
+                 graphPerformanceBenchmark·p0.95:   1.768 s/op
+                 graphPerformanceBenchmark·p0.99:   1.768 s/op
+                 graphPerformanceBenchmark·p0.999:  1.768 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.768 s/op
+                 graphPerformanceBenchmark·p1.00:   1.768 s/op
+
+
+# Run progress: 79.99% complete, ETA 00:02:15
+# Fork: 3 of 5
+# Warmup Iteration   1: 8308511+ 672168506+ 11296541+ 674359967+ 12971525+ 2.227 s/op
+# Warmup Iteration   2: 2192072+ 689626530+ 4323597+ 692148313+ 6056381+ 1822078+ 699957070+ 3876516+ 702049594+ 6028976+ 1.844 s/op
+# Warmup Iteration   3: 1827754+ 709779372+ 3571646+ 711571237+ 5586900+ 1790950+ 718823782+ 3535025+ 720619920+ 5289781+ 1.741 s/op
+Iteration   1: 2057612+ 727935880+ 4091970+ 730154502+ 6582320+ 1796565+ 738419069+ 3664358+ 740231381+ 5402391+ 1.868 s/op
+                 graphPerformanceBenchmark·p0.00:   1.760 s/op
+                 graphPerformanceBenchmark·p0.50:   1.868 s/op
+                 graphPerformanceBenchmark·p0.90:   1.976 s/op
+                 graphPerformanceBenchmark·p0.95:   1.976 s/op
+                 graphPerformanceBenchmark·p0.99:   1.976 s/op
+                 graphPerformanceBenchmark·p0.999:  1.976 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.976 s/op
+                 graphPerformanceBenchmark·p1.00:   1.976 s/op
+
+Iteration   2: 1802059+ 747306802+ 3591117+ 749111057+ 5325244+ 1937373+ 756131059+ 3739127+ 757945690+ 5454394+ 1.726 s/op
+                 graphPerformanceBenchmark·p0.00:   1.701 s/op
+                 graphPerformanceBenchmark·p0.50:   1.726 s/op
+                 graphPerformanceBenchmark·p0.90:   1.751 s/op
+                 graphPerformanceBenchmark·p0.95:   1.751 s/op
+                 graphPerformanceBenchmark·p0.99:   1.751 s/op
+                 graphPerformanceBenchmark·p0.999:  1.751 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.751 s/op
+                 graphPerformanceBenchmark·p1.00:   1.751 s/op
+
+Iteration   3: 1795650+ 765110467+ 3541984+ 766924854+ 5283862+ 1820674+ 774085970+ 3905629+ 776678859+ 5616379+ 1.819 s/op
+                 graphPerformanceBenchmark·p0.00:   1.745 s/op
+                 graphPerformanceBenchmark·p0.50:   1.819 s/op
+                 graphPerformanceBenchmark·p0.90:   1.894 s/op
+                 graphPerformanceBenchmark·p0.95:   1.894 s/op
+                 graphPerformanceBenchmark·p0.99:   1.894 s/op
+                 graphPerformanceBenchmark·p0.999:  1.894 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.894 s/op
+                 graphPerformanceBenchmark·p1.00:   1.894 s/op
+
+Iteration   4: 1812740+ 784019720+ 3545585+ 785828309+ 5253345+ 1794062+ 792783310+ 3545645+ 794565776+ 5246202+ 1.752 s/op
+                 graphPerformanceBenchmark·p0.00:   1.751 s/op
+                 graphPerformanceBenchmark·p0.50:   1.752 s/op
+                 graphPerformanceBenchmark·p0.90:   1.753 s/op
+                 graphPerformanceBenchmark·p0.95:   1.753 s/op
+                 graphPerformanceBenchmark·p0.99:   1.753 s/op
+                 graphPerformanceBenchmark·p0.999:  1.753 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.753 s/op
+                 graphPerformanceBenchmark·p1.00:   1.753 s/op
+
+Iteration   5: 1800593+ 801490502+ 3913075+ 803357685+ 5613205+ 1788264+ 810662414+ 3538687+ 812463069+ 5246385+ 1.758 s/op
+                 graphPerformanceBenchmark·p0.00:   1.747 s/op
+                 graphPerformanceBenchmark·p0.50:   1.758 s/op
+                 graphPerformanceBenchmark·p0.90:   1.770 s/op
+                 graphPerformanceBenchmark·p0.95:   1.770 s/op
+                 graphPerformanceBenchmark·p0.99:   1.770 s/op
+                 graphPerformanceBenchmark·p0.999:  1.770 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.770 s/op
+                 graphPerformanceBenchmark·p1.00:   1.770 s/op
+
+Iteration   6: 1855464+ 819387123+ 3603445+ 821194004+ 5296983+ 1948237+ 828182328+ 3698110+ 829975964+ 5396165+ 1.732 s/op
+                 graphPerformanceBenchmark·p0.00:   1.715 s/op
+                 graphPerformanceBenchmark·p0.50:   1.732 s/op
+                 graphPerformanceBenchmark·p0.90:   1.749 s/op
+                 graphPerformanceBenchmark·p0.95:   1.749 s/op
+                 graphPerformanceBenchmark·p0.99:   1.749 s/op
+                 graphPerformanceBenchmark·p0.999:  1.749 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.749 s/op
+                 graphPerformanceBenchmark·p1.00:   1.749 s/op
+
+Iteration   7: 1813899+ 837042840+ 3543387+ 838844837+ 5248583+ 1819636+ 845797945+ 3581167+ 847901943+ 5292406+ 1.754 s/op
+                 graphPerformanceBenchmark·p0.00:   1.749 s/op
+                 graphPerformanceBenchmark·p0.50:   1.754 s/op
+                 graphPerformanceBenchmark·p0.90:   1.760 s/op
+                 graphPerformanceBenchmark·p0.95:   1.760 s/op
+                 graphPerformanceBenchmark·p0.99:   1.760 s/op
+                 graphPerformanceBenchmark·p0.999:  1.760 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.760 s/op
+                 graphPerformanceBenchmark·p1.00:   1.760 s/op
+
+Iteration   8: 1803707+ 854900642+ 3542411+ 856696048+ 5253283+ 1788387+ 863644944+ 3539054+ 865443218+ 5237902+ 1.750 s/op
+                 graphPerformanceBenchmark·p0.00:   1.749 s/op
+                 graphPerformanceBenchmark·p0.50:   1.750 s/op
+                 graphPerformanceBenchmark·p0.90:   1.751 s/op
+                 graphPerformanceBenchmark·p0.95:   1.751 s/op
+                 graphPerformanceBenchmark·p0.99:   1.751 s/op
+                 graphPerformanceBenchmark·p0.999:  1.751 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.751 s/op
+                 graphPerformanceBenchmark·p1.00:   1.751 s/op
+
+Iteration   9: 1805903+ 872655054+ 3557119+ 874467183+ 5263597+ 1814326+ 881478761+ 3541190+ 883279842+ 5263110+ 1.770 s/op
+                 graphPerformanceBenchmark·p0.00:   1.753 s/op
+                 graphPerformanceBenchmark·p0.50:   1.770 s/op
+                 graphPerformanceBenchmark·p0.90:   1.787 s/op
+                 graphPerformanceBenchmark·p0.95:   1.787 s/op
+                 graphPerformanceBenchmark·p0.99:   1.787 s/op
+                 graphPerformanceBenchmark·p0.999:  1.787 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.787 s/op
+                 graphPerformanceBenchmark·p1.00:   1.787 s/op
+
+Iteration  10: 1803279+ 890229044+ 3527762+ 892024632+ 5258593+ 1845088+ 898948016+ 3588003+ 900742445+ 5276353+ 1.737 s/op
+                 graphPerformanceBenchmark·p0.00:   1.722 s/op
+                 graphPerformanceBenchmark·p0.50:   1.737 s/op
+                 graphPerformanceBenchmark·p0.90:   1.753 s/op
+                 graphPerformanceBenchmark·p0.95:   1.753 s/op
+                 graphPerformanceBenchmark·p0.99:   1.753 s/op
+                 graphPerformanceBenchmark·p0.999:  1.753 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.753 s/op
+                 graphPerformanceBenchmark·p1.00:   1.753 s/op
+
+
+# Run progress: 86.65% complete, ETA 00:01:30
+# Fork: 4 of 5
+# Warmup Iteration   1: 8864113+ 915016578+ 12285552+ 918089202+ 14191980+ 2.315 s/op
+# Warmup Iteration   2: 2260736+ 935138475+ 4016408+ 937832133+ 5775924+ 1842403+ 945345968+ 3902883+ 947481705+ 6199813+ 1.877 s/op
+# Warmup Iteration   3: 1851131+ 955388728+ 3623953+ 957226614+ 5822373+ 1824458+ 964725863+ 3588369+ 966533781+ 5328416+ 1.756 s/op
+Iteration   1: 2013789+ 973919381+ 4231801+ 976264346+ 6267928+ 2044856+ 984225263+ 3815908+ 986044900+ 5562485+ 1.863 s/op
+                 graphPerformanceBenchmark·p0.00:   1.774 s/op
+                 graphPerformanceBenchmark·p0.50:   1.863 s/op
+                 graphPerformanceBenchmark·p0.90:   1.952 s/op
+                 graphPerformanceBenchmark·p0.95:   1.952 s/op
+                 graphPerformanceBenchmark·p0.99:   1.952 s/op
+                 graphPerformanceBenchmark·p0.999:  1.952 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.952 s/op
+                 graphPerformanceBenchmark·p1.00:   1.952 s/op
+
+Iteration   2: 1804256+ 993349385+ 3573050+ 995180252+ 5290148+ 2219904+ 1002274350+ 4021596+ 1004098992+ 5754868+ 1.786 s/op
+                 graphPerformanceBenchmark·p0.00:   1.770 s/op
+                 graphPerformanceBenchmark·p0.50:   1.786 s/op
+                 graphPerformanceBenchmark·p0.90:   1.801 s/op
+                 graphPerformanceBenchmark·p0.95:   1.801 s/op
+                 graphPerformanceBenchmark·p0.99:   1.801 s/op
+                 graphPerformanceBenchmark·p0.999:  1.801 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.801 s/op
+                 graphPerformanceBenchmark·p1.00:   1.801 s/op
+
+Iteration   3: 1831172+ 1011559727+ 3606070+ 1013451751+ 5322801+ 1827571+ 1020605114+ 3861318+ 1023161199+ 5581833+ 1.828 s/op
+                 graphPerformanceBenchmark·p0.00:   1.762 s/op
+                 graphPerformanceBenchmark·p0.50:   1.828 s/op
+                 graphPerformanceBenchmark·p0.90:   1.894 s/op
+                 graphPerformanceBenchmark·p0.95:   1.894 s/op
+                 graphPerformanceBenchmark·p0.99:   1.894 s/op
+                 graphPerformanceBenchmark·p0.999:  1.894 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.894 s/op
+                 graphPerformanceBenchmark·p1.00:   1.894 s/op
+
+Iteration   4: 1850887+ 1030454087+ 3610160+ 1032271160+ 5339342+ 1809871+ 1039305200+ 3568228+ 1041121175+ 5297105+ 1.766 s/op
+                 graphPerformanceBenchmark·p0.00:   1.764 s/op
+                 graphPerformanceBenchmark·p0.50:   1.766 s/op
+                 graphPerformanceBenchmark·p0.90:   1.768 s/op
+                 graphPerformanceBenchmark·p0.95:   1.768 s/op
+                 graphPerformanceBenchmark·p0.99:   1.768 s/op
+                 graphPerformanceBenchmark·p0.999:  1.768 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.768 s/op
+                 graphPerformanceBenchmark·p1.00:   1.768 s/op
+
+Iteration   5: 1839412+ 1048499451+ 3583671+ 1050316890+ 5405688+ 1795894+ 1057435525+ 3560721+ 1059241611+ 5428392+ 1.788 s/op
+                 graphPerformanceBenchmark·p0.00:   1.770 s/op
+                 graphPerformanceBenchmark·p0.50:   1.788 s/op
+                 graphPerformanceBenchmark·p0.90:   1.806 s/op
+                 graphPerformanceBenchmark·p0.95:   1.806 s/op
+                 graphPerformanceBenchmark·p0.99:   1.806 s/op
+                 graphPerformanceBenchmark·p0.999:  1.806 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.806 s/op
+                 graphPerformanceBenchmark·p1.00:   1.806 s/op
+
+Iteration   6: 1881710+ 1066365128+ 3618766+ 1068204417+ 5713427+ 1807490+ 1075640374+ 3579763+ 1077462696+ 5294725+ 1.779 s/op
+                 graphPerformanceBenchmark·p0.00:   1.762 s/op
+                 graphPerformanceBenchmark·p0.50:   1.779 s/op
+                 graphPerformanceBenchmark·p0.90:   1.797 s/op
+                 graphPerformanceBenchmark·p0.95:   1.797 s/op
+                 graphPerformanceBenchmark·p0.99:   1.797 s/op
+                 graphPerformanceBenchmark·p0.999:  1.797 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.797 s/op
+                 graphPerformanceBenchmark·p1.00:   1.797 s/op
+
+Iteration   7: 1825679+ 1084454315+ 3622611+ 1086264308+ 5359362+ 1810176+ 1093319283+ 4017568+ 1095158939+ 5779892+ 1.790 s/op
+                 graphPerformanceBenchmark·p0.00:   1.764 s/op
+                 graphPerformanceBenchmark·p0.50:   1.790 s/op
+                 graphPerformanceBenchmark·p0.90:   1.816 s/op
+                 graphPerformanceBenchmark·p0.95:   1.816 s/op
+                 graphPerformanceBenchmark·p0.99:   1.816 s/op
+                 graphPerformanceBenchmark·p0.999:  1.816 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.816 s/op
+                 graphPerformanceBenchmark·p1.00:   1.816 s/op
+
+Iteration   8: 1817134+ 1102639877+ 3582266+ 1104446696+ 5310045+ 1813777+ 1111483543+ 3600333+ 1113322894+ 5319322+ 1.771 s/op
+                 graphPerformanceBenchmark·p0.00:   1.768 s/op
+                 graphPerformanceBenchmark·p0.50:   1.771 s/op
+                 graphPerformanceBenchmark·p0.90:   1.774 s/op
+                 graphPerformanceBenchmark·p0.95:   1.774 s/op
+                 graphPerformanceBenchmark·p0.99:   1.774 s/op
+                 graphPerformanceBenchmark·p0.999:  1.774 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.774 s/op
+                 graphPerformanceBenchmark·p1.00:   1.774 s/op
+
+Iteration   9: 2233636+ 1120357484+ 3980152+ 1122184994+ 5714950+ 1853511+ 1129663001+ 3643179+ 1131472079+ 5377610+ 1.783 s/op
+                 graphPerformanceBenchmark·p0.00:   1.757 s/op
+                 graphPerformanceBenchmark·p0.50:   1.783 s/op
+                 graphPerformanceBenchmark·p0.90:   1.808 s/op
+                 graphPerformanceBenchmark·p0.95:   1.808 s/op
+                 graphPerformanceBenchmark·p0.99:   1.808 s/op
+                 graphPerformanceBenchmark·p0.999:  1.808 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.808 s/op
+                 graphPerformanceBenchmark·p1.00:   1.808 s/op
+
+Iteration  10: 1820613+ 1138549636+ 3609549+ 1140808480+ 5347582+ 1825801+ 1147861014+ 3594900+ 1149684496+ 5328111+ 1.787 s/op
+                 graphPerformanceBenchmark·p0.00:   1.766 s/op
+                 graphPerformanceBenchmark·p0.50:   1.787 s/op
+                 graphPerformanceBenchmark·p0.90:   1.808 s/op
+                 graphPerformanceBenchmark·p0.95:   1.808 s/op
+                 graphPerformanceBenchmark·p0.99:   1.808 s/op
+                 graphPerformanceBenchmark·p0.999:  1.808 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.808 s/op
+                 graphPerformanceBenchmark·p1.00:   1.808 s/op
+
+
+# Run progress: 93.32% complete, ETA 00:00:45
+# Fork: 5 of 5
+# Warmup Iteration   1: 7228497+ 1163712780+ 11106600+ 1166614994+ 12834012+ 2.198 s/op
+# Warmup Iteration   2: 2269830+ 1182074245+ 4013844+ 1184691486+ 5719101+ 1771724+ 1192185912+ 3795706+ 1195149405+ 5517992+ 1.899 s/op
+# Warmup Iteration   3: 1824581+ 1202358798+ 3570487+ 1204134184+ 5794176+ 1790705+ 1211581921+ 3588002+ 1213390694+ 5311752+ 1.774 s/op
+Iteration   1: 2098933+ 1220691393+ 4135000+ 1222925213+ 6528243+ 1778804+ 1231183615+ 3496634+ 1232988725+ 5202258+ 1.833 s/op
+                 graphPerformanceBenchmark·p0.00:   1.755 s/op
+                 graphPerformanceBenchmark·p0.50:   1.833 s/op
+                 graphPerformanceBenchmark·p0.90:   1.911 s/op
+                 graphPerformanceBenchmark·p0.95:   1.911 s/op
+                 graphPerformanceBenchmark·p0.99:   1.911 s/op
+                 graphPerformanceBenchmark·p0.999:  1.911 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.911 s/op
+                 graphPerformanceBenchmark·p1.00:   1.911 s/op
+
+Iteration   2: 1793758+ 1239877623+ 3547294+ 1241680902+ 5686754+ 1800410+ 1249057349+ 3535147+ 1250871370+ 5239183+ 1.780 s/op
+                 graphPerformanceBenchmark·p0.00:   1.755 s/op
+                 graphPerformanceBenchmark·p0.50:   1.780 s/op
+                 graphPerformanceBenchmark·p0.90:   1.806 s/op
+                 graphPerformanceBenchmark·p0.95:   1.806 s/op
+                 graphPerformanceBenchmark·p0.99:   1.806 s/op
+                 graphPerformanceBenchmark·p0.999:  1.806 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.806 s/op
+                 graphPerformanceBenchmark·p1.00:   1.806 s/op
+
+Iteration   3: 1814876+ 1257790603+ 3548331+ 1259594858+ 5283129+ 1901607+ 1266806631+ 4197012+ 1268619431+ 5905565+ 1.807 s/op
+                 graphPerformanceBenchmark·p0.00:   1.751 s/op
+                 graphPerformanceBenchmark·p0.50:   1.807 s/op
+                 graphPerformanceBenchmark·p0.90:   1.862 s/op
+                 graphPerformanceBenchmark·p0.95:   1.862 s/op
+                 graphPerformanceBenchmark·p0.99:   1.862 s/op
+                 graphPerformanceBenchmark·p0.999:  1.862 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.862 s/op
+                 graphPerformanceBenchmark·p1.00:   1.862 s/op
+
+Iteration   4: 1828059+ 1276188505+ 3562430+ 1278037987+ 5281481+ 1770748+ 1284988470+ 3511588+ 1286787904+ 5214403+ 1.758 s/op
+                 graphPerformanceBenchmark·p0.00:   1.757 s/op
+                 graphPerformanceBenchmark·p0.50:   1.758 s/op
+                 graphPerformanceBenchmark·p0.90:   1.760 s/op
+                 graphPerformanceBenchmark·p0.95:   1.760 s/op
+                 graphPerformanceBenchmark·p0.99:   1.760 s/op
+                 graphPerformanceBenchmark·p0.999:  1.760 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.760 s/op
+                 graphPerformanceBenchmark·p1.00:   1.760 s/op
+
+Iteration   5: 2334955+ 1293694991+ 4058217+ 1295501017+ 5754746+ 1780268+ 1302938010+ 3526113+ 1304726824+ 5239793+ 1.779 s/op
+                 graphPerformanceBenchmark·p0.00:   1.757 s/op
+                 graphPerformanceBenchmark·p0.50:   1.779 s/op
+                 graphPerformanceBenchmark·p0.90:   1.801 s/op
+                 graphPerformanceBenchmark·p0.95:   1.801 s/op
+                 graphPerformanceBenchmark·p0.99:   1.801 s/op
+                 graphPerformanceBenchmark·p0.999:  1.801 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.801 s/op
+                 graphPerformanceBenchmark·p1.00:   1.801 s/op
+
+Iteration   6: 1790278+ 1311627563+ 3531301+ 1313885614+ 5249375+ 1793575+ 1320856298+ 3525199+ 1322656586+ 5228930+ 1.789 s/op
+                 graphPerformanceBenchmark·p0.00:   1.772 s/op
+                 graphPerformanceBenchmark·p0.50:   1.789 s/op
+                 graphPerformanceBenchmark·p0.90:   1.806 s/op
+                 graphPerformanceBenchmark·p0.95:   1.806 s/op
+                 graphPerformanceBenchmark·p0.99:   1.806 s/op
+                 graphPerformanceBenchmark·p0.999:  1.806 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.806 s/op
+                 graphPerformanceBenchmark·p1.00:   1.806 s/op
+
+Iteration   7: 1781673+ 1329544630+ 3533500+ 1331383981+ 5243090+ 1781673+ 1338726675+ 3512015+ 1340534470+ 5209887+ 1.776 s/op
+                 graphPerformanceBenchmark·p0.00:   1.755 s/op
+                 graphPerformanceBenchmark·p0.50:   1.776 s/op
+                 graphPerformanceBenchmark·p0.90:   1.797 s/op
+                 graphPerformanceBenchmark·p0.95:   1.797 s/op
+                 graphPerformanceBenchmark·p0.99:   1.797 s/op
+                 graphPerformanceBenchmark·p0.999:  1.797 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.797 s/op
+                 graphPerformanceBenchmark·p1.00:   1.797 s/op
+
+Iteration   8: 1782405+ 1347411162+ 3537772+ 1349211511+ 5242663+ 1789485+ 1356143501+ 3538931+ 1357936892+ 5704209+ 1.778 s/op
+                 graphPerformanceBenchmark·p0.00:   1.757 s/op
+                 graphPerformanceBenchmark·p0.50:   1.778 s/op
+                 graphPerformanceBenchmark·p0.90:   1.799 s/op
+                 graphPerformanceBenchmark·p0.95:   1.799 s/op
+                 graphPerformanceBenchmark·p0.99:   1.799 s/op
+                 graphPerformanceBenchmark·p0.999:  1.799 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.799 s/op
+                 graphPerformanceBenchmark·p1.00:   1.799 s/op
+
+Iteration   9: 1845272+ 1365324689+ 3590385+ 1367116860+ 5382617+ 1808039+ 1374245139+ 3540213+ 1376053911+ 5385118+ 1.757 s/op
+                 graphPerformanceBenchmark·p0.00:   1.757 s/op
+                 graphPerformanceBenchmark·p0.50:   1.757 s/op
+                 graphPerformanceBenchmark·p0.90:   1.757 s/op
+                 graphPerformanceBenchmark·p0.95:   1.757 s/op
+                 graphPerformanceBenchmark·p0.99:   1.757 s/op
+                 graphPerformanceBenchmark·p0.999:  1.757 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.757 s/op
+                 graphPerformanceBenchmark·p1.00:   1.757 s/op
+
+Iteration  10: 1797786+ 1383127623+ 3903066+ 1384915400+ 5599472+ 1775997+ 1392177160+ 3508109+ 1393959993+ 5213854+ 1.772 s/op
+                 graphPerformanceBenchmark·p0.00:   1.753 s/op
+                 graphPerformanceBenchmark·p0.50:   1.772 s/op
+                 graphPerformanceBenchmark·p0.90:   1.791 s/op
+                 graphPerformanceBenchmark·p0.95:   1.791 s/op
+                 graphPerformanceBenchmark·p0.99:   1.791 s/op
+                 graphPerformanceBenchmark·p0.999:  1.791 s/op
+                 graphPerformanceBenchmark·p0.9999: 1.791 s/op
+                 graphPerformanceBenchmark·p1.00:   1.791 s/op
+
+
+
+Result "commons.commons.App.graphPerformanceBenchmark":
+  N = 100
+  mean =      1.776 ±(99.9%) 0.017 s/op
+
+  Histogram, s/op:
+    [1.700, 1.725) = 7 
+    [1.725, 1.750) = 10 
+    [1.750, 1.775) = 59 
+    [1.775, 1.800) = 5 
+    [1.800, 1.825) = 10 
+    [1.825, 1.850) = 0 
+    [1.850, 1.875) = 1 
+    [1.875, 1.900) = 3 
+    [1.900, 1.925) = 1 
+    [1.925, 1.950) = 2 
+    [1.950, 1.975) = 1 
+
+  Percentiles, s/op:
+      p(0.0000) =      1.701 s/op
+     p(50.0000) =      1.762 s/op
+     p(90.0000) =      1.822 s/op
+     p(95.0000) =      1.910 s/op
+     p(99.0000) =      1.975 s/op
+     p(99.9000) =      1.976 s/op
+     p(99.9900) =      1.976 s/op
+     p(99.9990) =      1.976 s/op
+     p(99.9999) =      1.976 s/op
+    p(100.0000) =      1.976 s/op
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: commons.commons.App.graphPerformanceBenchmark
+
+# Run progress: 99.98% complete, ETA 00:00:00
+# Fork: 1 of 5
+# Warmup Iteration   1: 8350137+ 1407143431+ 12591704+ 1410478139+ 14311243+ 2.228 s/op
+# Warmup Iteration   2: 2258111+ 1427526375+ 4007069+ 1430206483+ 5725326+ 1.887 s/op
+# Warmup Iteration   3: 1767390+ 1437701642+ 3812978+ 1439786231+ 5983322+ 1.858 s/op
+Iteration   1: 1855098+ 1447718705+ 3651419+ 1449521740+ 5759263+ 1.729 s/op
+Iteration   2: 1858760+ 1456964592+ 3590567+ 1458797657+ 5329210+ 1.743 s/op
+Iteration   3: 1965205+ 1466108978+ 4002004+ 1468276819+ 6479720+ 1.960 s/op
+Iteration   4: 1806697+ 1476416386+ 3539664+ 1478206054+ 5243334+ 1.736 s/op
+Iteration   5: 1866816+ 1485106245+ 3617299+ 1486958169+ 5320725+ 1.742 s/op
+Iteration   6: 1935115+ 1493962910+ 3668509+ 1495751968+ 5379687+ 1.698 s/op
+Iteration   7: 1827937+ 1502814390+ 3565847+ 1504619867+ 5287217+ 1.742 s/op
+Iteration   8: 1808711+ 1511724889+ 3827627+ 1514083037+ 5526781+ 1.839 s/op
+Iteration   9: 1784175+ 1521271740+ 3523245+ 1523051887+ 5229967+ 1.739 s/op
+Iteration  10: 1776851+ 1529959706+ 3514639+ 1531754074+ 5201708+ 1.746 s/op
+
+# Run progress: 99.99% complete, ETA 00:00:00
+# Fork: 2 of 5
+# Warmup Iteration   1: 8545205+ 1545074963+ 11603547+ 1548144474+ 13332180+ 2.228 s/op
+# Warmup Iteration   2: 2265680+ 1564254113+ 4016042+ 1566833513+ 5782456+ 1.878 s/op
+# Warmup Iteration   3: 1805172+ 1574376095+ 3876151+ 1576501639+ 6170029+ 1.859 s/op
+Iteration   1: 1846187+ 1584381807+ 3728446+ 1586235074+ 6007431+ 1.754 s/op
+Iteration   2: 1808040+ 1593948372+ 3564139+ 1595771549+ 5295214+ 1.751 s/op
+Iteration   3: 1970577+ 1603054733+ 4033254+ 1605167155+ 6047836+ 1.940 s/op
+Iteration   4: 2176569+ 1612902609+ 3964040+ 1614727861+ 5683334+ 1.756 s/op
+Iteration   5: 1822078+ 1622124936+ 3577078+ 1623948418+ 5310533+ 1.763 s/op
+Iteration   6: 2394159+ 1630963598+ 4190052+ 1632791841+ 5912460+ 1.808 s/op
+Iteration   7: 1821467+ 1640402417+ 3574941+ 1642266609+ 5317857+ 1.756 s/op
+Iteration   8: 1797053+ 1649395070+ 3788991+ 1651758162+ 5511093+ 1.855 s/op
+Iteration   9: 1866389+ 1658973841+ 3630240+ 1660787801+ 5353258+ 1.759 s/op
+Iteration  10: 1802180+ 1667858401+ 3633291+ 1669682310+ 5376756+ 1.764 s/op
+
+# Run progress: 99.99% complete, ETA 00:00:00
+# Fork: 3 of 5
+# Warmup Iteration   1: 8243204+ 1685194355+ 11108797+ 1687455946+ 13041409+ 2.338 s/op
+# Warmup Iteration   2: 2835136+ 1702709692+ 4607531+ 1705252044+ 6324568+ 1.890 s/op
+# Warmup Iteration   3: 1800715+ 1713445870+ 3818593+ 1716318788+ 5525986+ 1.923 s/op
+Iteration   1: 1897090+ 1723528546+ 3772574+ 1725314857+ 5946091+ 1.776 s/op
+Iteration   2: 1976313+ 1733002704+ 3700125+ 1734791274+ 5413743+ 1.756 s/op
+Iteration   3: 2024409+ 1742185725+ 4051686+ 1744300405+ 6679060+ 1.965 s/op
+Iteration   4: 1790706+ 1752675688+ 3550406+ 1754500818+ 5261949+ 1.747 s/op
+Iteration   5: 1789058+ 1761453315+ 3541190+ 1763249025+ 5295092+ 1.749 s/op
+Iteration   6: 2195978+ 1770233322+ 3944570+ 1772031474+ 5665574+ 1.752 s/op
+Iteration   7: 1798762+ 1779370262+ 3540395+ 1781287006+ 5264450+ 1.745 s/op
+Iteration   8: 1773677+ 1788335265+ 3824026+ 1790186945+ 5603318+ 1.806 s/op
+Iteration   9: 1790340+ 1797468969+ 3555900+ 1799265656+ 5258349+ 1.745 s/op
+Iteration  10: 1806575+ 1806197707+ 3573294+ 1807993418+ 5288744+ 1.748 s/op
+
+# Run progress: 99.99% complete, ETA 00:00:00
+# Fork: 4 of 5
+# Warmup Iteration   1: 8472146+ 1822148838+ 11136813+ 1824709988+ 12848723+ 2.356 s/op
+# Warmup Iteration   2: 2213068+ 1840310352+ 3942556+ 1842986431+ 5703660+ 1.889 s/op
+# Warmup Iteration   3: 1827388+ 1850468956+ 3893057+ 1852576677+ 6180832+ 1.860 s/op
+Iteration   1: 1927668+ 1860466551+ 3677602+ 1862279474+ 5691146+ 1.734 s/op
+Iteration   2: 1804378+ 1869660252+ 3551444+ 1871456329+ 5268419+ 1.753 s/op
+Iteration   3: 1968928+ 1878718762+ 4011464+ 1880923957+ 6013045+ 1.926 s/op
+Iteration   4: 2038447+ 1888647997+ 3816274+ 1890431867+ 5529587+ 1.755 s/op
+Iteration   5: 1799373+ 1897634118+ 3535575+ 1899429768+ 5238817+ 1.755 s/op
+Iteration   6: 2331660+ 1906332216+ 4070974+ 1908149655+ 5782457+ 1.809 s/op
+Iteration   7: 1824763+ 1915600382+ 3564321+ 1917423742+ 5306565+ 1.752 s/op
+Iteration   8: 1782405+ 1924537919+ 3762198+ 1927176950+ 5492723+ 1.883 s/op
+Iteration   9: 1832943+ 1934385672+ 3585318+ 1936266039+ 5290575+ 1.757 s/op
+Iteration  10: 1780696+ 1943234405+ 3531973+ 1945021815+ 5284715+ 1.755 s/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 5 of 5
+# Warmup Iteration   1: 8311197+ 1957569878+ 11707490+ 1961174727+ 13568081+ 2.164 s/op
+# Warmup Iteration   2: 2236932+ 1977247136+ 4176685+ 1979903257+ 5875717+ 1.879 s/op
+# Warmup Iteration   3: 1768367+ 1987526406+ 3793081+ 1989635470+ 6011703+ 1.867 s/op
+Iteration   1: 1930781+ 1997326613+ 3694204+ 1999117319+ 5822860+ 1.745 s/op
+Iteration   2: 1785274+ 2006614552+ 3505424+ 2008423629+ 5226550+ 1.758 s/op
+Iteration   3: 1975032+ 2015623379+ 4056753+ 2017824362+ 6062180+ 1.941 s/op
+Iteration   4: 1951594+ 2025575625+ 3677908+ 2027366208+ 5366137+ 1.766 s/op
+Iteration   5: 1769039+ 2034447183+ 3494010+ 2036244298+ 5181628+ 1.759 s/op
+Iteration   6: 2049006+ 2043107806+ 3804556+ 2044892897+ 5510484+ 1.734 s/op
+Iteration   7: 1818660+ 2052079097+ 3556936+ 2053972769+ 5257860+ 1.761 s/op
+Iteration   8: 1784297+ 2061072604+ 3952932+ 2063399319+ 5681809+ 1.856 s/op
+Iteration   9: 1753535+ 2070760812+ 3476248+ 2072547368+ 5175096+ 1.756 s/op
+Iteration  10: 1778987+ 2079407640+ 3515921+ 2081194074+ 5223497+ 1.758 s/op
+
+
+Result "commons.commons.App.graphPerformanceBenchmark":
+  N = 50
+  mean =      1.782 ±(99.9%) 0.032 s/op
+
+  Histogram, s/op:
+    [1.600, 1.625) = 0 
+    [1.625, 1.650) = 0 
+    [1.650, 1.675) = 0 
+    [1.675, 1.700) = 1 
+    [1.700, 1.725) = 0 
+    [1.725, 1.750) = 15 
+    [1.750, 1.775) = 21 
+    [1.775, 1.800) = 1 
+    [1.800, 1.825) = 3 
+    [1.825, 1.850) = 1 
+    [1.850, 1.875) = 2 
+    [1.875, 1.900) = 1 
+    [1.900, 1.925) = 0 
+    [1.925, 1.950) = 3 
+    [1.950, 1.975) = 2 
+
+  Percentiles, s/op:
+      p(0.0000) =      1.698 s/op
+     p(50.0000) =      1.756 s/op
+     p(90.0000) =      1.922 s/op
+     p(95.0000) =      1.950 s/op
+     p(99.0000) =      1.965 s/op
+     p(99.9000) =      1.965 s/op
+     p(99.9900) =      1.965 s/op
+     p(99.9990) =      1.965 s/op
+     p(99.9999) =      1.965 s/op
+    p(100.0000) =      1.965 s/op
+
+
+# Run complete. Total time: 00:13:17
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                          Mode  Cnt  Score   Error  Units
+App.graphPerformanceBenchmark                                     thrpt   50  0.565 ± 0.005  ops/s
+App.graphPerformanceBenchmark                                      avgt   50  1.797 ± 0.041   s/op
+App.graphPerformanceBenchmark                                    sample  100  1.776 ± 0.017   s/op
+App.graphPerformanceBenchmark:graphPerformanceBenchmark·p0.00    sample       1.701           s/op
+App.graphPerformanceBenchmark:graphPerformanceBenchmark·p0.50    sample       1.762           s/op
+App.graphPerformanceBenchmark:graphPerformanceBenchmark·p0.90    sample       1.822           s/op
+App.graphPerformanceBenchmark:graphPerformanceBenchmark·p0.95    sample       1.910           s/op
+App.graphPerformanceBenchmark:graphPerformanceBenchmark·p0.99    sample       1.975           s/op
+App.graphPerformanceBenchmark:graphPerformanceBenchmark·p0.999   sample       1.976           s/op
+App.graphPerformanceBenchmark:graphPerformanceBenchmark·p0.9999  sample       1.976           s/op
+App.graphPerformanceBenchmark:graphPerformanceBenchmark·p1.00    sample       1.976           s/op
+App.graphPerformanceBenchmark                                        ss   50  1.782 ± 0.032   s/op
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mJgrapht[0;1m ---[m
+[[1;34mINFO[m] Installing /home/jffk0586/eclipse-workspace/Jgrapht/target/Jgrapht-0.0.1-SNAPSHOT.jar to /home/jffk0586/.m2/repository/Jgrapht/Jgrapht/0.0.1-SNAPSHOT/Jgrapht-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/jffk0586/eclipse-workspace/Jgrapht/pom.xml to /home/jffk0586/.m2/repository/Jgrapht/Jgrapht/0.0.1-SNAPSHOT/Jgrapht-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  13:20 min
+[[1;34mINFO[m] Finished at: 2020-09-04T13:24:18+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
