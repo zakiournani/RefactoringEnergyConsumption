@@ -1,0 +1,433 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for http:http:jar:0.0.1-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for http:http:jar should use a variable instead of a hard-coded path /home/jffk0586/eclipse-workspace/http/jar/okhttp.jar @ line 47, column 22
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 59, column 11
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------------------< [0;36mhttp:http[0;1m >------------------------------[m
+[[1;34mINFO[m] [1mBuilding http 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mhttp[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/jffk0586/eclipse-workspace/http/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mhttp[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jffk0586/eclipse-workspace/http/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mhttp[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 2 source files to /home/jffk0586/eclipse-workspace/http/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mhttp[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jffk0586/eclipse-workspace/http/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mhttp[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/jffk0586/eclipse-workspace/http/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mhttp[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/jffk0586/eclipse-workspace/http/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running JsonBench.JsonBench.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mhttp[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/jffk0586/eclipse-workspace/http/target/http-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-shade-plugin:3.2.0:shade[m [1m(default)[m @ [36mhttp[0;1m ---[m
+[[1;34mINFO[m] Including org.jetbrains.kotlin:kotlin-stdlib:jar:1.3.72 in the shaded jar.
+[[1;34mINFO[m] Including org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.3.72 in the shaded jar.
+[[1;34mINFO[m] Including org.jetbrains:annotations:jar:13.0 in the shaded jar.
+[[1;34mINFO[m] Including com.squareup.okio:okio:jar:2.4.0 in the shaded jar.
+[[1;34mINFO[m] Including org.openjdk.jmh:jmh-core:jar:1.22 in the shaded jar.
+[[1;34mINFO[m] Including net.sf.jopt-simple:jopt-simple:jar:4.6 in the shaded jar.
+[[1;34mINFO[m] Including org.apache.commons:commons-math3:jar:3.2 in the shaded jar.
+[[1;34mINFO[m] Including org.openjdk.jmh:jmh-generator-annprocess:jar:1.22 in the shaded jar.
+[[1;34mINFO[m] Replacing /home/jffk0586/eclipse-workspace/http/target/benchmarks.jar with /home/jffk0586/eclipse-workspace/http/target/http-0.0.1-SNAPSHOT-shaded.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.0.0:exec[m [1m(run-benchmarks)[m @ [36mhttp[0;1m ---[m
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 2 iterations, 7 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: commons.commons.App.httpBenchmark
+
+# Run progress: 0.00% complete, ETA 00:04:00
+# Fork: 1 of 5
+# Warmup Iteration   1: 27754690+ 0.492 ops/s
+Iteration   1: 21376715+ 20464547+ 20416025+ 20045359+ 20451424+ 0.595 ops/s
+Iteration   2: 20332102+ 20218698+ 19720347+ 20452096+ 20317331+ 0.615 ops/s
+
+# Run progress: 6.67% complete, ETA 00:04:26
+# Fork: 2 of 5
+# Warmup Iteration   1: 26648796+ 23590089+ 0.532 ops/s
+Iteration   1: 20697762+ 20239939+ 20257638+ 20247934+ 20372324+ 0.602 ops/s
+Iteration   2: 20362679+ 20281992+ 19860850+ 20233468+ 20041819+ 0.603 ops/s
+
+# Run progress: 13.33% complete, ETA 00:04:17
+# Fork: 3 of 5
+# Warmup Iteration   1: 26257257+ 22368229+ 0.548 ops/s
+Iteration   1: 20418466+ 20346811+ 20227609+ 19978343+ 20052377+ 0.606 ops/s
+Iteration   2: 20415964+ 20186471+ 19751720+ 19940867+ 20080637+ 0.604 ops/s
+
+# Run progress: 20.00% complete, ETA 00:04:00
+# Fork: 4 of 5
+# Warmup Iteration   1: 27569205+ 0.499 ops/s
+Iteration   1: 21023384+ 20450448+ 20337716+ 20289987+ 20402109+ 0.598 ops/s
+Iteration   2: 20513192+ 20463387+ 20292429+ 20508126+ 20524850+ 0.609 ops/s
+
+# Run progress: 26.67% complete, ETA 00:03:37
+# Fork: 5 of 5
+# Warmup Iteration   1: 27649831+ 0.485 ops/s
+Iteration   1: 21113777+ 20365670+ 20167246+ 20066355+ 20393502+ 0.592 ops/s
+Iteration   2: 20456979+ 20230295+ 20062143+ 20943123+ 20048716+ 0.601 ops/s
+
+
+Result "commons.commons.App.httpBenchmark":
+  0.602 ±(99.9%) 0.010 ops/s [Average]
+  (min, avg, max) = (0.592, 0.602, 0.615), stdev = 0.007
+  CI (99.9%): [0.592, 0.612] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 2 iterations, 7 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: commons.commons.App.httpBenchmark
+
+# Run progress: 33.33% complete, ETA 00:03:16
+# Fork: 1 of 5
+# Warmup Iteration   1: 26450433+ 22127507+ 1.854 s/op
+Iteration   1: 20078928+ 20409677+ 19686534+ 20257455+ 20419320+ 1.660 s/op
+Iteration   2: 20058115+ 20295663+ 20435983+ 20260752+ 20109873+ 1.652 s/op
+
+# Run progress: 40.00% complete, ETA 00:02:57
+# Fork: 2 of 5
+# Warmup Iteration   1: 26126703+ 2.007 s/op
+Iteration   1: 23406556+ 20231333+ 20314401+ 20386727+ 20679757+ 1.728 s/op
+Iteration   2: 20413522+ 20460152+ 20294748+ 20383066+ 19855173+ 1.709 s/op
+
+# Run progress: 46.66% complete, ETA 00:02:37
+# Fork: 3 of 5
+# Warmup Iteration   1: 27403617+ 22347782+ 1.875 s/op
+Iteration   1: 20775398+ 20324411+ 20350534+ 20166086+ 19727671+ 1.680 s/op
+Iteration   2: 19901682+ 19745677+ 20408944+ 19686901+ 20416390+ 1.660 s/op
+
+# Run progress: 53.33% complete, ETA 00:02:18
+# Fork: 4 of 5
+# Warmup Iteration   1: 26981743+ 2.085 s/op
+Iteration   1: 21547430+ 20420724+ 20457528+ 20255380+ 20100229+ 1.679 s/op
+Iteration   2: 20456124+ 20053416+ 20368905+ 20710946+ 19768260+ 1.668 s/op
+
+# Run progress: 60.00% complete, ETA 00:01:58
+# Fork: 5 of 5
+# Warmup Iteration   1: 27206717+ 2.003 s/op
+Iteration   1: 23223391+ 20342660+ 20750435+ 20126291+ 20381845+ 1.699 s/op
+Iteration   2: 20270334+ 20135202+ 20521127+ 20714790+ 20471872+ 1.655 s/op
+
+
+Result "commons.commons.App.httpBenchmark":
+  1.679 ±(99.9%) 0.038 s/op [Average]
+  (min, avg, max) = (1.652, 1.679, 1.728), stdev = 0.025
+  CI (99.9%): [1.641, 1.717] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 2 iterations, 7 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: commons.commons.App.httpBenchmark
+
+# Run progress: 66.66% complete, ETA 00:01:38
+# Fork: 1 of 5
+# Warmup Iteration   1: 26484002+ 21828374+ 1.879 s/op
+Iteration   1: 20326120+ 20905952+ 19860301+ 20388192+ 20828255+ 1.679 ±(99.9%) 0.196 s/op
+                 httpBenchmark·p0.00:   1.634 s/op
+                 httpBenchmark·p0.50:   1.669 s/op
+                 httpBenchmark·p0.90:   1.766 s/op
+                 httpBenchmark·p0.95:   1.766 s/op
+                 httpBenchmark·p0.99:   1.766 s/op
+                 httpBenchmark·p0.999:  1.766 s/op
+                 httpBenchmark·p0.9999: 1.766 s/op
+                 httpBenchmark·p1.00:   1.766 s/op
+
+Iteration   2: 19927317+ 20334359+ 20512948+ 20337900+ 19807078+ 1.678 ±(99.9%) 0.107 s/op
+                 httpBenchmark·p0.00:   1.646 s/op
+                 httpBenchmark·p0.50:   1.690 s/op
+                 httpBenchmark·p0.90:   1.711 s/op
+                 httpBenchmark·p0.95:   1.711 s/op
+                 httpBenchmark·p0.99:   1.711 s/op
+                 httpBenchmark·p0.999:  1.711 s/op
+                 httpBenchmark·p0.9999: 1.711 s/op
+                 httpBenchmark·p1.00:   1.711 s/op
+
+
+# Run progress: 73.33% complete, ETA 00:01:19
+# Fork: 2 of 5
+# Warmup Iteration   1: 26714775+ 21997319+ 1.818 s/op
+Iteration   1: 20051950+ 20607980+ 20325631+ 20429330+ 20396005+ 1.639 ±(99.9%) 0.138 s/op
+                 httpBenchmark·p0.00:   1.592 s/op
+                 httpBenchmark·p0.50:   1.629 s/op
+                 httpBenchmark·p0.90:   1.678 s/op
+                 httpBenchmark·p0.95:   1.678 s/op
+                 httpBenchmark·p0.99:   1.678 s/op
+                 httpBenchmark·p0.999:  1.678 s/op
+                 httpBenchmark·p0.9999: 1.678 s/op
+                 httpBenchmark·p1.00:   1.678 s/op
+
+Iteration   2: 20500985+ 20119761+ 20221811+ 20042002+ 20108408+ 1.630 ±(99.9%) 0.257 s/op
+                 httpBenchmark·p0.00:   1.554 s/op
+                 httpBenchmark·p0.50:   1.629 s/op
+                 httpBenchmark·p0.90:   1.703 s/op
+                 httpBenchmark·p0.95:   1.703 s/op
+                 httpBenchmark·p0.99:   1.703 s/op
+                 httpBenchmark·p0.999:  1.703 s/op
+                 httpBenchmark·p0.9999: 1.703 s/op
+                 httpBenchmark·p1.00:   1.703 s/op
+
+
+# Run progress: 80.00% complete, ETA 00:00:59
+# Fork: 3 of 5
+# Warmup Iteration   1: 27333548+ 2.034 s/op
+Iteration   1: 20946907+ 20537361+ 20321054+ 20372812+ 20312936+ 1.705 ±(99.9%) 0.268 s/op
+                 httpBenchmark·p0.00:   1.634 s/op
+                 httpBenchmark·p0.50:   1.680 s/op
+                 httpBenchmark·p0.90:   1.783 s/op
+                 httpBenchmark·p0.95:   1.783 s/op
+                 httpBenchmark·p0.99:   1.783 s/op
+                 httpBenchmark·p0.999:  1.783 s/op
+                 httpBenchmark·p0.9999: 1.783 s/op
+                 httpBenchmark·p1.00:   1.783 s/op
+
+Iteration   2: 20756538+ 19981212+ 20105295+ 20879402+ 20632454+ 1.645 ±(99.9%) 0.174 s/op
+                 httpBenchmark·p0.00:   1.594 s/op
+                 httpBenchmark·p0.50:   1.625 s/op
+                 httpBenchmark·p0.90:   1.701 s/op
+                 httpBenchmark·p0.95:   1.701 s/op
+                 httpBenchmark·p0.99:   1.701 s/op
+                 httpBenchmark·p0.999:  1.701 s/op
+                 httpBenchmark·p0.9999: 1.701 s/op
+                 httpBenchmark·p1.00:   1.701 s/op
+
+
+# Run progress: 86.66% complete, ETA 00:00:39
+# Fork: 4 of 5
+# Warmup Iteration   1: 26431268+ 22589725+ 1.843 s/op
+Iteration   1: 20673165+ 20210825+ 19868601+ 20513680+ 20474435+ 1.661 ±(99.9%) 0.219 s/op
+                 httpBenchmark·p0.00:   1.611 s/op
+                 httpBenchmark·p0.50:   1.629 s/op
+                 httpBenchmark·p0.90:   1.732 s/op
+                 httpBenchmark·p0.95:   1.732 s/op
+                 httpBenchmark·p0.99:   1.732 s/op
+                 httpBenchmark·p0.999:  1.732 s/op
+                 httpBenchmark·p0.9999: 1.732 s/op
+                 httpBenchmark·p1.00:   1.732 s/op
+
+Iteration   2: 20317880+ 19752452+ 20522286+ 20061656+ 20449105+ 1.659 ±(99.9%) 0.154 s/op
+                 httpBenchmark·p0.00:   1.594 s/op
+                 httpBenchmark·p0.50:   1.665 s/op
+                 httpBenchmark·p0.90:   1.701 s/op
+                 httpBenchmark·p0.95:   1.701 s/op
+                 httpBenchmark·p0.99:   1.701 s/op
+                 httpBenchmark·p0.999:  1.701 s/op
+                 httpBenchmark·p0.9999: 1.701 s/op
+                 httpBenchmark·p1.00:   1.701 s/op
+
+
+# Run progress: 93.33% complete, ETA 00:00:19
+# Fork: 5 of 5
+# Warmup Iteration   1: 26928581+ 22308536+ 1.828 s/op
+Iteration   1: 20389780+ 20284494+ 20017038+ 19889231+ 20380075+ 1.632 ±(99.9%) 0.143 s/op
+                 httpBenchmark·p0.00:   1.609 s/op
+                 httpBenchmark·p0.50:   1.615 s/op
+                 httpBenchmark·p0.90:   1.697 s/op
+                 httpBenchmark·p0.95:   1.697 s/op
+                 httpBenchmark·p0.99:   1.697 s/op
+                 httpBenchmark·p0.999:  1.697 s/op
+                 httpBenchmark·p0.9999: 1.697 s/op
+                 httpBenchmark·p1.00:   1.697 s/op
+
+Iteration   2: 20103892+ 20563668+ 20256051+ 19762279+ 19925059+ 1.647 ±(99.9%) 0.188 s/op
+                 httpBenchmark·p0.00:   1.600 s/op
+                 httpBenchmark·p0.50:   1.642 s/op
+                 httpBenchmark·p0.90:   1.718 s/op
+                 httpBenchmark·p0.95:   1.718 s/op
+                 httpBenchmark·p0.99:   1.718 s/op
+                 httpBenchmark·p0.999:  1.718 s/op
+                 httpBenchmark·p0.9999: 1.718 s/op
+                 httpBenchmark·p1.00:   1.718 s/op
+
+
+
+Result "commons.commons.App.httpBenchmark":
+  N = 50
+  mean =      1.657 ±(99.9%) 0.025 s/op
+
+  Histogram, s/op:
+    [1.500, 1.525) = 0 
+    [1.525, 1.550) = 0 
+    [1.550, 1.575) = 2 
+    [1.575, 1.600) = 3 
+    [1.600, 1.625) = 9 
+    [1.625, 1.650) = 9 
+    [1.650, 1.675) = 9 
+    [1.675, 1.700) = 8 
+    [1.700, 1.725) = 6 
+    [1.725, 1.750) = 1 
+    [1.750, 1.775) = 1 
+    [1.775, 1.800) = 2 
+
+  Percentiles, s/op:
+      p(0.0000) =      1.554 s/op
+     p(50.0000) =      1.655 s/op
+     p(90.0000) =      1.717 s/op
+     p(95.0000) =      1.771 s/op
+     p(99.0000) =      1.783 s/op
+     p(99.9000) =      1.783 s/op
+     p(99.9900) =      1.783 s/op
+     p(99.9990) =      1.783 s/op
+     p(99.9999) =      1.783 s/op
+    p(100.0000) =      1.783 s/op
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 2 iterations, 7 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: commons.commons.App.httpBenchmark
+
+# Run progress: 99.99% complete, ETA 00:00:00
+# Fork: 1 of 5
+# Warmup Iteration   1: 26587273+ 1.894 s/op
+Iteration   1: 22449466+ 1.696 s/op
+Iteration   2: 20573067+ 1.638 s/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 2 of 5
+# Warmup Iteration   1: 27583059+ 2.020 s/op
+Iteration   1: 22364750+ 1.661 s/op
+Iteration   2: 20134836+ 1.700 s/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 3 of 5
+# Warmup Iteration   1: 27376456+ 2.018 s/op
+Iteration   1: 21267524+ 1.688 s/op
+Iteration   2: 20134348+ 1.664 s/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 4 of 5
+# Warmup Iteration   1: 26629875+ 1.901 s/op
+Iteration   1: 21801519+ 1.723 s/op
+Iteration   2: 20715401+ 1.659 s/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 5 of 5
+# Warmup Iteration   1: 27354910+ 2.041 s/op
+Iteration   1: 20937141+ 1.695 s/op
+Iteration   2: 19742930+ 1.640 s/op
+
+
+Result "commons.commons.App.httpBenchmark":
+  N = 10
+  mean =      1.676 ±(99.9%) 0.042 s/op
+
+  Histogram, s/op:
+    [1.630, 1.635) = 0 
+    [1.635, 1.640) = 2 
+    [1.640, 1.645) = 0 
+    [1.645, 1.650) = 0 
+    [1.650, 1.655) = 0 
+    [1.655, 1.660) = 1 
+    [1.660, 1.665) = 2 
+    [1.665, 1.670) = 0 
+    [1.670, 1.675) = 0 
+    [1.675, 1.680) = 0 
+    [1.680, 1.685) = 0 
+    [1.685, 1.690) = 1 
+    [1.690, 1.695) = 1 
+    [1.695, 1.700) = 2 
+    [1.700, 1.705) = 0 
+    [1.705, 1.710) = 0 
+    [1.710, 1.715) = 0 
+    [1.715, 1.720) = 0 
+    [1.720, 1.725) = 1 
+
+  Percentiles, s/op:
+      p(0.0000) =      1.638 s/op
+     p(50.0000) =      1.676 s/op
+     p(90.0000) =      1.720 s/op
+     p(95.0000) =      1.723 s/op
+     p(99.0000) =      1.723 s/op
+     p(99.9000) =      1.723 s/op
+     p(99.9900) =      1.723 s/op
+     p(99.9990) =      1.723 s/op
+     p(99.9999) =      1.723 s/op
+    p(100.0000) =      1.723 s/op
+
+
+# Run complete. Total time: 00:05:25
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                  Mode  Cnt  Score   Error  Units
+App.httpBenchmark                         thrpt   10  0.602 ± 0.010  ops/s
+App.httpBenchmark                          avgt   10  1.679 ± 0.038   s/op
+App.httpBenchmark                        sample   50  1.657 ± 0.025   s/op
+App.httpBenchmark:httpBenchmark·p0.00    sample       1.554           s/op
+App.httpBenchmark:httpBenchmark·p0.50    sample       1.655           s/op
+App.httpBenchmark:httpBenchmark·p0.90    sample       1.717           s/op
+App.httpBenchmark:httpBenchmark·p0.95    sample       1.771           s/op
+App.httpBenchmark:httpBenchmark·p0.99    sample       1.783           s/op
+App.httpBenchmark:httpBenchmark·p0.999   sample       1.783           s/op
+App.httpBenchmark:httpBenchmark·p0.9999  sample       1.783           s/op
+App.httpBenchmark:httpBenchmark·p1.00    sample       1.783           s/op
+App.httpBenchmark                            ss   10  1.676 ± 0.042   s/op
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mhttp[0;1m ---[m
+[[1;34mINFO[m] Installing /home/jffk0586/eclipse-workspace/http/target/http-0.0.1-SNAPSHOT.jar to /home/jffk0586/.m2/repository/http/http/0.0.1-SNAPSHOT/http-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/jffk0586/eclipse-workspace/http/pom.xml to /home/jffk0586/.m2/repository/http/http/0.0.1-SNAPSHOT/http-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  05:29 min
+[[1;34mINFO[m] Finished at: 2020-09-04T00:39:52+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

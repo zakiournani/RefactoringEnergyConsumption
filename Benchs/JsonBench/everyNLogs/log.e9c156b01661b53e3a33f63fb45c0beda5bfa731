@@ -1,0 +1,177 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for JsonBench:JsonBench:jar:0.0.1-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for gson:gson:jar should use a variable instead of a hard-coded path /home/jffk0586/eclipse-workspace/JsonBench/gsonJar/gson.jar @ line 34, column 22
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 46, column 11
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------< [0;36mJsonBench:JsonBench[0;1m >-------------------------[m
+[[1;34mINFO[m] [1mBuilding JsonBench 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mJsonBench[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/jffk0586/eclipse-workspace/JsonBench/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mJsonBench[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jffk0586/eclipse-workspace/JsonBench/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mJsonBench[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 4 source files to /home/jffk0586/eclipse-workspace/JsonBench/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mJsonBench[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jffk0586/eclipse-workspace/JsonBench/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mJsonBench[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/jffk0586/eclipse-workspace/JsonBench/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mJsonBench[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/jffk0586/eclipse-workspace/JsonBench/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running JsonBench.JsonBench.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mJsonBench[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/jffk0586/eclipse-workspace/JsonBench/target/JsonBench-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-shade-plugin:3.2.0:shade[m [1m(default)[m @ [36mJsonBench[0;1m ---[m
+[[1;34mINFO[m] Including org.openjdk.jmh:jmh-core:jar:1.22 in the shaded jar.
+[[1;34mINFO[m] Including net.sf.jopt-simple:jopt-simple:jar:4.6 in the shaded jar.
+[[1;34mINFO[m] Including org.apache.commons:commons-math3:jar:3.2 in the shaded jar.
+[[1;34mINFO[m] Including org.openjdk.jmh:jmh-generator-annprocess:jar:1.22 in the shaded jar.
+[[1;34mINFO[m] Replacing /home/jffk0586/eclipse-workspace/JsonBench/target/benchmarks.jar with /home/jffk0586/eclipse-workspace/JsonBench/target/JsonBench-0.0.1-SNAPSHOT-shaded.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.0.0:exec[m [1m(run-benchmarks)[m @ [36mJsonBench[0;1m ---[m
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 3 iterations, 2 s each
+# Measurement: 10 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: JsonBench.JsonBench.App.benchmarkSerializationWithGSON
+
+# Run progress: 0.00% complete, ETA 00:02:10
+# Fork: 1 of 5
+# Warmup Iteration   1: 24108398+ 8909645+ 1.077 s/op
+# Warmup Iteration   2: 6880048+ 5318712+ 5549302+ 5228014+ 4615711+ 0.451 s/op
+# Warmup Iteration   3: 4846118+ 4587391+ 5285203+ 5614365+ 5810776+ 0.443 s/op
+Iteration   1: 4619129+ 4575245+ 4639941+ 4787952+ 4640491+ 4715198+ 0.399 s/op
+Iteration   2: 4658618+ 5324389+ 5085436+ 4522449+ 4602161+ 0.415 s/op
+Iteration   3: 4663745+ 4557178+ 4775196+ 4655261+ 5101733+ 0.407 s/op
+Iteration   4: 5051135+ 4759448+ 5033739+ 6423140+ 4850452+ 0.463 s/op
+Iteration   5: 4668994+ 4881885+ 4866381+ 4714588+ 5138170+ 0.419 s/op
+Iteration   6: 4984240+ 4868823+ 5306322+ 4775012+ 4847888+ 0.423 s/op
+Iteration   7: 4913318+ 4679248+ 4942370+ 4998034+ 4648182+ 0.415 s/op
+Iteration   8: 5274401+ 4993273+ 4824084+ 5462816+ 4663196+ 0.423 s/op
+Iteration   9: 5007312+ 4870165+ 4751514+ 4778552+ 4712147+ 0.413 s/op
+Iteration  10: 4902880+ 4914782+ 4550587+ 4685840+ 4819506+ 0.407 s/op
+
+# Run progress: 20.00% complete, ETA 00:01:54
+# Fork: 2 of 5
+# Warmup Iteration   1: 24193115+ 8002421+ 1.116 s/op
+# Warmup Iteration   2: 5687241+ 5762559+ 6227157+ 5446336+ 5068469+ 0.468 s/op
+# Warmup Iteration   3: 5446031+ 5034228+ 10283237+ 7956218+ 0.563 s/op
+Iteration   1: 5944015+ 4907459+ 4969591+ 4853137+ 5275988+ 0.434 s/op
+Iteration   2: 4737048+ 4828052+ 5427354+ 5535325+ 9220008+ 0.497 s/op
+Iteration   3: 4732227+ 4756335+ 4790821+ 4766284+ 4913378+ 0.413 s/op
+Iteration   4: 5030200+ 4689563+ 4612903+ 5013110+ 5338609+ 0.421 s/op
+Iteration   5: 4623035+ 4583546+ 4960437+ 4599476+ 4864733+ 0.407 s/op
+Iteration   6: 4669177+ 4635487+ 4632373+ 4577747+ 4918200+ 0.402 s/op
+Iteration   7: 4647938+ 4573657+ 4569996+ 4624988+ 4746509+ 0.402 s/op
+Iteration   8: 4628833+ 4605274+ 4930652+ 4883777+ 4593799+ 0.410 s/op
+Iteration   9: 4632556+ 4604053+ 4657886+ 4636524+ 4644214+ 0.402 s/op
+Iteration  10: 4682483+ 4584583+ 4778308+ 4540882+ 4583606+ 0.402 s/op
+
+# Run progress: 40.00% complete, ETA 00:01:25
+# Fork: 3 of 5
+# Warmup Iteration   1: 22802310+ 8206217+ 1.019 s/op
+# Warmup Iteration   2: 5999679+ 5348619+ 5978378+ 5513231+ 4568714+ 0.450 s/op
+# Warmup Iteration   3: 4872790+ 4608448+ 5454210+ 5908859+ 6027756+ 0.454 s/op
+Iteration   1: 5101977+ 4589282+ 4655689+ 5285509+ 5051562+ 0.421 s/op
+Iteration   2: 4875110+ 4852527+ 5331651+ 4955492+ 4692920+ 0.425 s/op
+Iteration   3: 4773548+ 4617236+ 5044848+ 5263536+ 4813037+ 0.416 s/op
+Iteration   4: 4821948+ 4780688+ 5059802+ 4747119+ 4705737+ 0.413 s/op
+Iteration   5: 4744312+ 4923572+ 4682727+ 5559922+ 4863147+ 0.425 s/op
+Iteration   6: 4674731+ 4732410+ 4712756+ 5029101+ 4522205+ 0.421 s/op
+Iteration   7: 4915759+ 4708606+ 4963977+ 4843676+ 4916674+ 0.425 s/op
+Iteration   8: 4754809+ 4813648+ 5258836+ 4799549+ 4910754+ 0.426 s/op
+Iteration   9: 5131212+ 5110461+ 4880420+ 4977526+ 4796863+ 0.433 s/op
+Iteration  10: 4878833+ 4991564+ 4828174+ 4919665+ 6844221+ 0.462 s/op
+
+# Run progress: 60.00% complete, ETA 00:00:56
+# Fork: 4 of 5
+# Warmup Iteration   1: 23520997+ 8852822+ 1.114 s/op
+# Warmup Iteration   2: 5966172+ 5619492+ 6668135+ 5794785+ 5191881+ 0.483 s/op
+# Warmup Iteration   3: 5186572+ 4889209+ 6832380+ 6276107+ 6128402+ 0.482 s/op
+Iteration   1: 5060778+ 4847217+ 4662952+ 4833057+ 4756274+ 0.412 s/op
+Iteration   2: 4581654+ 4569263+ 5614487+ 5569993+ 4573353+ 0.430 s/op
+Iteration   3: 5058520+ 4941271+ 4755359+ 4835315+ 4554187+ 0.417 s/op
+Iteration   4: 4680469+ 5138354+ 6202010+ 4869739+ 4576282+ 0.428 s/op
+Iteration   5: 4676258+ 4751697+ 4623950+ 4918872+ 6278365+ 0.422 s/op
+Iteration   6: 5280748+ 5394762+ 5106859+ 5447740+ 4755725+ 0.449 s/op
+Iteration   7: 4700244+ 4550221+ 5370347+ 5394518+ 4910204+ 0.449 s/op
+Iteration   8: 4784229+ 4558948+ 5122729+ 5004870+ 4847949+ 0.434 s/op
+Iteration   9: 4490772+ 4697071+ 4493396+ 4926501+ 5370957+ 0.417 s/op
+Iteration  10: 4640979+ 4949634+ 4821948+ 4400562+ 4461964+ 0.412 s/op
+
+# Run progress: 80.00% complete, ETA 00:00:28
+# Fork: 5 of 5
+# Warmup Iteration   1: 23330995+ 8668435+ 1.039 s/op
+# Warmup Iteration   2: 5799607+ 5565171+ 5817856+ 5420946+ 4620471+ 0.462 s/op
+# Warmup Iteration   3: 4664905+ 5749558+ 6307418+ 5863389+ 5629990+ 0.485 s/op
+Iteration   1: 4675647+ 4567127+ 5149828+ 4876819+ 4551624+ 0.423 s/op
+Iteration   2: 4568165+ 4804065+ 5307603+ 4501026+ 5712998+ 0.441 s/op
+Iteration   3: 4942858+ 4603260+ 4975451+ 4542591+ 4786609+ 0.415 s/op
+Iteration   4: 4929369+ 4660572+ 5168871+ 5094836+ 4732959+ 0.432 s/op
+Iteration   5: 5342332+ 4758289+ 4937243+ 5602342+ 4733325+ 0.450 s/op
+Iteration   6: 4714038+ 4823962+ 5174731+ 4805529+ 4679127+ 0.436 s/op
+Iteration   7: 4642566+ 4633106+ 4452625+ 4710742+ 4631336+ 0.414 s/op
+Iteration   8: 4488209+ 4487782+ 4480579+ 4988696+ 4852527+ 0.419 s/op
+Iteration   9: 5358201+ 4407704+ 4418995+ 4466846+ 4722278+ 0.412 s/op
+Iteration  10: 4939563+ 4613208+ 4629261+ 4604114+ 4538441+ 0.406 s/op
+
+
+Result "JsonBench.JsonBench.App.benchmarkSerializationWithGSON":
+  0.423 ±(99.9%) 0.009 s/op [Average]
+  (min, avg, max) = (0.399, 0.423, 0.497), stdev = 0.018
+  CI (99.9%): [0.414, 0.432] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:22
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                               Mode  Cnt  Score   Error  Units
+JsonBench.JsonBench.App.benchmarkSerializationWithGSON  avgt   50  0.423 ± 0.009   s/op
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mJsonBench[0;1m ---[m
+[[1;34mINFO[m] Installing /home/jffk0586/eclipse-workspace/JsonBench/target/JsonBench-0.0.1-SNAPSHOT.jar to /home/jffk0586/.m2/repository/JsonBench/JsonBench/0.0.1-SNAPSHOT/JsonBench-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/jffk0586/eclipse-workspace/JsonBench/pom.xml to /home/jffk0586/.m2/repository/JsonBench/JsonBench/0.0.1-SNAPSHOT/JsonBench-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  02:25 min
+[[1;34mINFO[m] Finished at: 2020-09-04T16:38:56+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

@@ -1,0 +1,238 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for collections:collections:jar:0.0.1-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for collections:collections:jar should use a variable instead of a hard-coded path /home/jffk0586/eclipse-workspace/Collections/jar/collections.jar @ line 49, column 22
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for api:api:jar should use a variable instead of a hard-coded path /home/jffk0586/eclipse-workspace/Collections/jar/api.jar @ line 57, column 22
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for lang:lang:jar should use a variable instead of a hard-coded path /home/jffk0586/eclipse-workspace/Collections/jar/common-lang3.jar @ line 65, column 22
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: junit:junit:jar -> version 4.13 vs 3.8.1 @ line 67, column 17
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.codehaus.mojo:exec-maven-plugin is missing. @ line 91, column 11
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------< [0;36mcollections:collections[0;1m >-----------------------[m
+[[1;34mINFO[m] [1mBuilding collections 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mcollections[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/jffk0586/eclipse-workspace/Collections/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mcollections[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jffk0586/eclipse-workspace/Collections/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mcollections[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 2 source files to /home/jffk0586/eclipse-workspace/Collections/target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mcollections[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/jffk0586/eclipse-workspace/Collections/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36mcollections[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 1 source file to /home/jffk0586/eclipse-workspace/Collections/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36mcollections[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /home/jffk0586/eclipse-workspace/Collections/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running JsonBench.JsonBench.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mcollections[0;1m ---[m
+[[1;34mINFO[m] Building jar: /home/jffk0586/eclipse-workspace/Collections/target/collections-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-shade-plugin:3.2.0:shade[m [1m(default)[m @ [36mcollections[0;1m ---[m
+[[1;34mINFO[m] Including org.jetbrains.kotlin:kotlin-stdlib:jar:1.3.72 in the shaded jar.
+[[1;34mINFO[m] Including org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.3.72 in the shaded jar.
+[[1;34mINFO[m] Including org.jetbrains:annotations:jar:13.0 in the shaded jar.
+[[1;34mINFO[m] Including org.openjdk.jmh:jmh-core:jar:1.22 in the shaded jar.
+[[1;34mINFO[m] Including net.sf.jopt-simple:jopt-simple:jar:4.6 in the shaded jar.
+[[1;34mINFO[m] Including org.apache.commons:commons-math3:jar:3.2 in the shaded jar.
+[[1;34mINFO[m] Including org.openjdk.jmh:jmh-generator-annprocess:jar:1.22 in the shaded jar.
+[[1;34mINFO[m] Including com.google.guava:guava:jar:13.0-rc1 in the shaded jar.
+[[1;34mINFO[m] Including io.opencensus:opencensus-api:jar:0.22.1 in the shaded jar.
+[[1;34mINFO[m] Including io.grpc:grpc-context:jar:1.19.0 in the shaded jar.
+[[1;34mINFO[m] Including io.opencensus:opencensus-contrib-http-util:jar:0.22.1 in the shaded jar.
+[[1;34mINFO[m] Replacing /home/jffk0586/eclipse-workspace/Collections/target/benchmarks.jar with /home/jffk0586/eclipse-workspace/Collections/target/collections-0.0.1-SNAPSHOT-shaded.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mexec-maven-plugin:3.0.0:exec[m [1m(run-benchmarks)[m @ [36mcollections[0;1m ---[m
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: commons.commons.App.httpBenchmark
+# Parameters: (size = 5000000)
+
+# Run progress: 0.00% complete, ETA 00:05:30
+# Fork: 1 of 5
+# Warmup Iteration   1: 12538847+ 2.579 s/op
+Iteration   1: 8618752+ 8794594+ 9268348+ 7429852+ 8085123+ 2.301 s/op
+Iteration   2: 8818886+ 7412518+ 7983927+ 8839516+ 7421307+ 2.323 s/op
+
+# Run progress: 6.67% complete, ETA 00:08:18
+# Fork: 2 of 5
+# Warmup Iteration   1: 53767807+ 5.547 s/op
+Iteration   1: 8539835+ 7904093+ 7579876+ 8405313+ 7091107+ 2.239 s/op
+Iteration   2: 7648723+ 8324075+ 7491863+ 7472699+ 7163555+ 2.197 s/op
+
+# Run progress: 13.33% complete, ETA 00:07:55
+# Fork: 3 of 5
+# Warmup Iteration   1: 12564238+ 2.582 s/op
+Iteration   1: 8667519+ 8626443+ 9059974+ 7407147+ 8116252+ 2.289 s/op
+Iteration   2: 8827248+ 7358563+ 8058756+ 8951698+ 7304974+ 2.317 s/op
+
+# Run progress: 20.00% complete, ETA 00:07:14
+# Fork: 4 of 5
+# Warmup Iteration   1: 45836919+ 4.979 s/op
+Iteration   1: 8645608+ 8223672+ 7908061+ 8688332+ 7263165+ 2.283 s/op
+Iteration   2: 7798564+ 8800148+ 7256513+ 7904704+ 7249798+ 2.234 s/op
+
+# Run progress: 26.67% complete, ETA 00:06:41
+# Fork: 5 of 5
+# Warmup Iteration   1: 12672819+ 2.597 s/op
+Iteration   1: 8712197+ 8755532+ 9254310+ 7300945+ 8085368+ 2.310 s/op
+Iteration   2: 8978187+ 7471661+ 8995277+ 7334881+ 8588052+ 2.337 s/op
+
+
+Result "commons.commons.App.httpBenchmark":
+  2.283 ±(99.9%) 0.068 s/op [Average]
+  (min, avg, max) = (2.197, 2.283, 2.337), stdev = 0.045
+  CI (99.9%): [2.214, 2.351] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: commons.commons.App.httpBenchmark
+# Parameters: (size = 7500000)
+
+# Run progress: 33.33% complete, ETA 00:06:02
+# Fork: 1 of 5
+# Warmup Iteration   1: 81224096+ 8.657 s/op
+Iteration   1: 12486480+ 18075454+ 37630275+ 4.090 s/op
+Iteration   2: 10667759+ 18540236+ 11134065+ 3.525 s/op
+
+# Run progress: 40.00% complete, ETA 00:05:39
+# Fork: 2 of 5
+# Warmup Iteration   1: 82359347+ 8.639 s/op
+Iteration   1: 17276628+ 11456636+ 40864520+ 4.262 s/op
+Iteration   2: 13203274+ 10642673+ 16560626+ 3.521 s/op
+
+# Run progress: 46.67% complete, ETA 00:05:11
+# Fork: 3 of 5
+# Warmup Iteration   1: 71097657+ 7.820 s/op
+Iteration   1: 12550322+ 20002878+ 36726164+ 4.181 s/op
+Iteration   2: 11138095+ 14923789+ 13280728+ 3.457 s/op
+
+# Run progress: 53.33% complete, ETA 00:04:36
+# Fork: 4 of 5
+# Warmup Iteration   1: 75042654+ 8.103 s/op
+Iteration   1: 12196990+ 17983109+ 10645602+ 3.358 s/op
+Iteration   2: 10205662+ 15095787+ 15635275+ 3.381 s/op
+
+# Run progress: 60.00% complete, ETA 00:03:59
+# Fork: 5 of 5
+# Warmup Iteration   1: 81839207+ 8.576 s/op
+Iteration   1: 12902067+ 18776746+ 40423480+ 4.270 s/op
+Iteration   2: 10759250+ 15760336+ 11485078+ 3.468 s/op
+
+
+Result "commons.commons.App.httpBenchmark":
+  3.751 ±(99.9%) 0.594 s/op [Average]
+  (min, avg, max) = (3.358, 3.751, 4.270), stdev = 0.393
+  CI (99.9%): [3.157, 4.346] (assumes normal distribution)
+
+
+# JMH version: 1.22
+# VM version: JDK 1.8.0_242, OpenJDK 64-Bit Server VM, 25.242-b08
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 2 s each
+# Measurement: 2 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: commons.commons.App.httpBenchmark
+# Parameters: (size = 9250000)
+
+# Run progress: 66.67% complete, ETA 00:03:22
+# Fork: 1 of 5
+# Warmup Iteration   1: 75049551+ 7.701 s/op
+Iteration   1: 10317662+ 18116347+ 38235437+ 3.494 s/op
+Iteration   2: 11611482+ 8844887+ 10815768+ 11232881+ 2.605 s/op
+
+# Run progress: 73.33% complete, ETA 00:02:43
+# Fork: 2 of 5
+# Warmup Iteration   1: 12813871+ 2.765 s/op
+Iteration   1: 58944124+ 11444794+ 14388819+ 3.813 s/op
+Iteration   2: 12272674+ 12404387+ 12486113+ 13467068+ 2.665 s/op
+
+# Run progress: 80.00% complete, ETA 00:02:02
+# Fork: 3 of 5
+# Warmup Iteration   1: 12335235+ 2.727 s/op
+Iteration   1: 57218176+ 12866116+ 32393350+ 4.278 s/op
+Iteration   2: 11061068+ 13030240+ 9219703+ 9366797+ 8816994+ 2.418 s/op
+
+# Run progress: 86.67% complete, ETA 00:01:22
+# Fork: 4 of 5
+# Warmup Iteration   1: 12423430+ 2.788 s/op
+Iteration   1: 49407161+ 13124478+ 33543493+ 4.137 s/op
+Iteration   2: 11100374+ 11202853+ 12783475+ 8710000+ 2.542 s/op
+
+# Run progress: 93.33% complete, ETA 00:00:41
+# Fork: 5 of 5
+# Warmup Iteration   1: 67773142+ 7.137 s/op
+Iteration   1: 10939852+ 16334675+ 38059717+ 3.442 s/op
+Iteration   2: 12090789+ 8605508+ 11786347+ 10975863+ 2.553 s/op
+
+
+Result "commons.commons.App.httpBenchmark":
+  3.195 ±(99.9%) 1.088 s/op [Average]
+  (min, avg, max) = (2.418, 3.195, 4.278), stdev = 0.720
+  CI (99.9%): [2.107, 4.283] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:10:23
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark           (size)  Mode  Cnt  Score   Error  Units
+App.httpBenchmark  5000000  avgt   10  2.283 ± 0.068   s/op
+App.httpBenchmark  7500000  avgt   10  3.751 ± 0.594   s/op
+App.httpBenchmark  9250000  avgt   10  3.195 ± 1.088   s/op
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mcollections[0;1m ---[m
+[[1;34mINFO[m] Installing /home/jffk0586/eclipse-workspace/Collections/target/collections-0.0.1-SNAPSHOT.jar to /home/jffk0586/.m2/repository/collections/collections/0.0.1-SNAPSHOT/collections-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /home/jffk0586/eclipse-workspace/Collections/pom.xml to /home/jffk0586/.m2/repository/collections/collections/0.0.1-SNAPSHOT/collections-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  10:27 min
+[[1;34mINFO[m] Finished at: 2020-09-03T23:12:59+02:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
